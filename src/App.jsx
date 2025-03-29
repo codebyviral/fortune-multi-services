@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import AboutUsPage from "./pages/AboutUsPage";
 import Registrations from "./pages/Registration";
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/registrations" element={<Registrations />} />
             <Route path="/registrations/company" element={<Registrations type="company" />} />
             <Route path="/registrations/government" element={<Registrations type="government" />} />
+            <Route path="/our_profile/aboutuspage" element={<AboutUsPage />} />
 
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />

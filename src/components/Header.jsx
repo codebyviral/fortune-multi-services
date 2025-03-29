@@ -35,6 +35,11 @@ const Header = () => {
       title: 'TAX',
       path: '/tax-compliances',
       submenus: [{ title: 'Tax Services', path: '/tax-compliances/services', items: ['Income Tax Filing', 'Income Tax Audit', 'Professional Tax Registration'] }]
+    },
+    {
+      title: 'Our Profile',
+      path: '/our_Profile',
+      submenus: [{ title: 'Our_Profile', path: '/our_profile', items: ['AboutUsPage', '            ', 'Contact Us'] }]
     }
   ];
 
