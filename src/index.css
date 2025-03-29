@@ -317,3 +317,5 @@ body {
     transform: translateY(0);
   }
 }
+
+@import "tailwindcss";
