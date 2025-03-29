@@ -90,7 +90,7 @@ export default function NotFound() {
             className="text-3xl font-bold text-center text-gray-800 mb-4"
             variants={item}
           >
-            Lost in Digital Space
+            Lost In Digital Space
           </motion.h2>
 
           <motion.p 
