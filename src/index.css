@@ -43,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  transition: color 0.3s ease;
+  transition: color 0.9s ease;
 }
 
 .contact-item:hover {
@@ -144,7 +144,7 @@ body {
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.9s ease;
   padding: 0.25rem 0;
 }
 
@@ -206,7 +206,7 @@ body {
   text-decoration: none;
   border-radius: 0.25rem;
   font-size: 0.75rem;
-  transition: all 0.2s ease;
+  transition: all 0.9s ease;
 }
 
 .dropdown-item:hover {

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import { FaHome, FaArrowLeft, FaSearch, FaSadTear } from "react-icons/fa";
 
 export default function NotFound() {
