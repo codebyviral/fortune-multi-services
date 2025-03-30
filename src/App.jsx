@@ -10,7 +10,7 @@ import PVTLTDPage from "./pages/PVTLTDPage";
 import PartnershipFirmRegistration from "./pages/PartnershipFirm";
 import OPCRegistration from "./pages/OPCRegistration";
 import StartupIndiaRegistration from "./pages/StartupRegistration";
-
+import LLPPage from "./pages/LLPPage";
 
 import NotFound from "./pages/NotFound";
 
@@ -35,6 +35,7 @@ function App() {
             <Route path="/registrations/company/partnership-firm" element={<PartnershipFirmRegistration />} />
             <Route path="/registrations/company/opc-registration" element={<OPCRegistration />} />
             <Route path="/registrations/company/startup-registration" element={<StartupIndiaRegistration />} />
+            <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
 
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
