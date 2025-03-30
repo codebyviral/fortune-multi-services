@@ -16,13 +16,9 @@
     "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-    "react-router-dom": "^7.4.1"
-=======
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.4.0",
     "tailwindcss": "^4.0.17"
->>>>>>> 3b560b799de80d322522b87f1226a8453e967e4f
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
