@@ -206,7 +206,7 @@ const LLPRegistrationGuide = () => {
         </div>
       </div>
 
-      {/* Document and Papers Section */}
+      {/* Documents Section */}
       <div className="mt-12 bg-white rounded-xl shadow-md p-8">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Documents Required</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -252,7 +252,7 @@ const LLPRegistrationGuide = () => {
       </div>
 
       {/* Comparison Table */}
-      <div className="mt-12 bg-white rounded-xl shadow-md p-8">
+      <div className="mt-12 bg-yellow rounded-xl shadow-md p-8">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">LLP vs Private Limited Company</h2>
         <div className="overflow-x-auto">
           <table className="w-full">
@@ -285,11 +285,11 @@ const LLPRegistrationGuide = () => {
       </div>
 
       {/* Conclusion */}
-      <div className="mt-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl shadow-md p-8 text-white">
+      <div className="mt-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl shadow-md p-8 text-blue">
         <h2 className="text-2xl font-semibold mb-4 text-center">Conclusion</h2>
         <p className="text-center max-w-3xl mx-auto">
           An LLP is an ideal business structure for startups, professionals, and small businesses looking for limited liability 
-          with minimal compliance. It provides the best of both worlds – a corporate structure with partnership flexibility.
+          with minimal compliance.
         </p>
       </div>
 
