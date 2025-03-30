@@ -206,7 +206,7 @@ const LLPRegistrationGuide = () => {
         </div>
       </div>
 
-      {/* Document's Section */}
+      {/* Document and Papers Section */}
       <div className="mt-12 bg-white rounded-xl shadow-md p-8">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Documents Required</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
