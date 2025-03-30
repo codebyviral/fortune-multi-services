@@ -6,7 +6,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactForm from "./pages/ContactForm";
 import Registrations from "./pages/Registration";
 import ProprietorshipPage from "./pages/ProprietorshipPage";
-
+import PVTLTDPage from "./pages/PVTLTDPage";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
             <Route path="/our_profile/aboutuspage" element={<AboutUsPage />} />
             <Route path="/our_profile/contact-us" element={<ContactForm />} />
             <Route path="/registrations/company/proprietorship-firm" element={<ProprietorshipPage />} />
+            <Route path="/registrations/company/pvt-ltd-registration" element={<PVTLTDPage />} />
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
