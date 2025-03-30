@@ -7,6 +7,11 @@ import ContactForm from "./pages/ContactForm";
 import Registrations from "./pages/Registration";
 import ProprietorshipPage from "./pages/ProprietorshipPage";
 import PVTLTDPage from "./pages/PVTLTDPage";
+import PartnershipFirmRegistration from "./pages/PartnershipFirm";
+import OPCRegistration from "./pages/OPCRegistration";
+import StartupIndiaRegistration from "./pages/StartupRegistration";
+
+
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -27,6 +32,10 @@ function App() {
             <Route path="/our_profile/contact-us" element={<ContactForm />} />
             <Route path="/registrations/company/proprietorship-firm" element={<ProprietorshipPage />} />
             <Route path="/registrations/company/pvt-ltd-registration" element={<PVTLTDPage />} />
+            <Route path="/registrations/company/partnership-firm" element={<PartnershipFirmRegistration />} />
+            <Route path="/registrations/company/opc-registration" element={<OPCRegistration />} />
+            <Route path="/registrations/company/startup-registration" element={<StartupIndiaRegistration />} />
+
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
