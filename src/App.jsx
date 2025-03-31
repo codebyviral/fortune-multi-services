@@ -10,13 +10,12 @@ import PVTLTDPage from "./pages/PVTLTDPage";
 import PartnershipFirmRegistration from "./pages/PartnershipFirm";
 import OPCRegistration from "./pages/OPCRegistration";
 import StartupIndiaRegistration from "./pages/StartupRegistration";
-
+import IncomeTaxFiling from "./pages/IncomeTaxFiling";
 import UdyamRegistration from "./pages/UdyamRegistration";
-
 import LLPPage from "./pages/LLPPage";
 import SocietyPage from "./pages/SocietyPage";
-
-
+import IncomeTaxAudit from "./pages/IncomeTaxAudit";
+import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -40,16 +39,13 @@ function App() {
             <Route path="/registrations/company/partnership-firm" element={<PartnershipFirmRegistration />} />
             <Route path="/registrations/company/opc-registration" element={<OPCRegistration />} />
             <Route path="/registrations/company/startup-registration" element={<StartupIndiaRegistration />} />
-
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
-
-
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
-
-
-            {/* 404 Route */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
+            <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
+            <Route path="/tax-compliances/services/professional-tax-registration" element={<ProfessionalTaxRegistration />}/>
+            < Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
