@@ -63,8 +63,8 @@ const Header = () => {
 
       <div className="header-main">
         <Link to="/" className="logo">
-          <span className="logo-main">INVENTION</span>
-          <span className="logo-sub">Business Solutions</span>
+          <span className="logo-main">Fortune Multi</span>
+          <span className="logo-sub">Services</span>
         </Link>
         
         <button 
