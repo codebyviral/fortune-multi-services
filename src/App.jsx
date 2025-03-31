@@ -18,10 +18,12 @@ import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
 import GSTRegistration from "./pages/GSTRegistration";
 import GSTReturns from "./pages/GSTReturns"
-import GSTModification from "./pages/GSTModifications"
 import NotFound from "./pages/NotFound";
 import GSTModifications from "./pages/GSTModifications";
-
+import TrademarkRegistration from "./pages/TrademarkRegistration";
+import TrademarkRenewal from "./pages/TrademarkRenewal"
+import TrademarkOpposition from "./pages/TrademarkOpposition";
+import TrademarkObjection from "./pages/TrademarkObjection"
 function App() {
   return (
     <Router>
@@ -52,6 +54,10 @@ function App() {
             <Route path="/gst/services/gst-registration" element={<GSTRegistration />}/>
             <Route path="gst/services/gst-return-filing" element={<GSTReturns />}/>
             <Route path="/gst/services/gst-modifications" element={<GSTModifications />}/>
+            <Route path="/trademark/services/trademark-registration" element={<TrademarkRegistration />}/>
+            <Route path="/trademark/services/trademark-renewal" element={<TrademarkRenewal />}/>
+            <Route path="/trademark/services/trademark-opposition" element={<TrademarkOpposition />}/>
+            <Route path="/trademark/services/trademark-objection" element={<TrademarkObjection />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>
