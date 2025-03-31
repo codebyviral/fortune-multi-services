@@ -3,6 +3,12 @@ import React from "react";
 const ProfessionalTaxRegistration = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
         <h1 className="text-3xl font-bold text-blue-600 mb-4">
           Professional Tax Registration

@@ -1,7 +1,12 @@
 export default function StartupIndiaRegistration() {
     return (
       <div style={{ fontFamily: 'Arial, sans-serif', margin: '0 auto', maxWidth: '1200px', padding: '20px' }}>
-  
+  <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
         {/* Heading */}
         <h1 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
           Startup India Registration in Hyderabad

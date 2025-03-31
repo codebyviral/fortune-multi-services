@@ -75,6 +75,12 @@ const PvtLtdRegistrationPage = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6 bg-gray-50">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {/* Header Section */}
       <header className="mb-10 text-center">
         <h1 className="text-3xl font-bold text-blue-800 mb-2">Private Limited Company Registration</h1>

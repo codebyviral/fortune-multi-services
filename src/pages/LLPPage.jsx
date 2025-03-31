@@ -5,6 +5,12 @@ const LLPRegistrationGuide = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 bg-gradient-to-br from-blue-50 to-indigo-50">
       {/* Hero Section */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <header className="text-center mb-16">
         <h1 className="text-4xl font-bold text-indigo-800 mb-4">LLP Registration: A Complete Guide</h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">

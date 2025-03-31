@@ -3,6 +3,12 @@ import React from 'react';
 const ProprietorshipPage = () => {
   return (
     <div className=" ">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
         
         {/* Header */}

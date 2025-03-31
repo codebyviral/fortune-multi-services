@@ -5,6 +5,12 @@ const TrademarkRegistration = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Hero Section */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="flex flex-col md:flex-row gap-8 items-center mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-md">
         <div className="md:w-1/3">
           <img
