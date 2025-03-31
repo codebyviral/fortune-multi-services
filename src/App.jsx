@@ -16,7 +16,11 @@ import LLPPage from "./pages/LLPPage";
 import SocietyPage from "./pages/SocietyPage";
 import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
+import GSTRegistration from "./pages/GSTRegistration";
+import GSTReturns from "./pages/GSTReturns"
+import GSTModification from "./pages/GSTModifications"
 import NotFound from "./pages/NotFound";
+import GSTModifications from "./pages/GSTModifications";
 
 function App() {
   return (
@@ -45,6 +49,9 @@ function App() {
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
             <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
             <Route path="/tax-compliances/services/professional-tax-registration" element={<ProfessionalTaxRegistration />}/>
+            <Route path="/gst/services/gst-registration" element={<GSTRegistration />}/>
+            <Route path="gst/services/gst-return-filing" element={<GSTReturns />}/>
+            <Route path="/gst/services/gst-modifications" element={<GSTModifications />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>
