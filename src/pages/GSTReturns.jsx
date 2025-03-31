@@ -4,6 +4,12 @@ import gstImage from "/GST.png";
 const GSTReturns = () => {
   return (
     <div className="container mx-auto p-6">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/3">
           <img

@@ -4,6 +4,12 @@ const TrademarkOpposition = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Hero Section */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-md">
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-800 mb-4">
           Trademark Opposition in Telangana

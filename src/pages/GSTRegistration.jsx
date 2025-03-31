@@ -3,6 +3,12 @@ import React from "react";
 const GSTRegistration = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-5 md:px-20">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-blue-700 text-center mb-6">
           GST Registration in Hyderabad

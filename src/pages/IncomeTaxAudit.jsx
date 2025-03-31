@@ -6,6 +6,12 @@ const IncomeTaxAudit = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center w-full">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <header className="bg-blue-600 text-white text-center py-6 px-4 rounded-lg shadow-lg w-full max-w-6xl">
         <h1 className="text-3xl font-bold">Income Tax Audit in India</h1>
         <p className="mt-2 text-lg">Discover the importance of income tax audit and streamline the process</p>
