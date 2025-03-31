@@ -24,6 +24,9 @@ import TrademarkRegistration from "./pages/TrademarkRegistration";
 import TrademarkRenewal from "./pages/TrademarkRenewal"
 import TrademarkOpposition from "./pages/TrademarkOpposition";
 import TrademarkObjection from "./pages/TrademarkObjection"
+import FSSAILicense from "./pages/FSSAILicense";
+import StateFoodLicense from "./pages/StateFoodLicense";
+import CentralFoodLicense from "./pages/CentralFoodLicense";
 function App() {
   return (
     <Router>
@@ -58,6 +61,9 @@ function App() {
             <Route path="/trademark/services/trademark-renewal" element={<TrademarkRenewal />}/>
             <Route path="/trademark/services/trademark-opposition" element={<TrademarkOpposition />}/>
             <Route path="/trademark/services/trademark-objection" element={<TrademarkObjection />}/>
+            <Route path="/food-license/fssai/food-license-registration" element={<FSSAILicense />}/>
+            <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
+            <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>
