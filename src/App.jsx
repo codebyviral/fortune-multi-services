@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactForm from "./pages/ContactForm";
 import Registrations from "./pages/Registration";
@@ -27,15 +26,17 @@ import TrademarkObjection from "./pages/TrademarkObjection"
 import FSSAILicense from "./pages/FSSAILicense";
 import StateFoodLicense from "./pages/StateFoodLicense";
 import CentralFoodLicense from "./pages/CentralFoodLicense";
+import Intro from "./pages/Intro"
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
         <Header />
+        <br/>
+        <br/>
         {/* Main content area */}
         <main className="container mx-auto px-4 py-8">
           <Routes>
-            <Route path="/" element={<Home />} />
             
             {/* Registration Routes */}
             <Route path="/registrations" element={<Registrations />} />
@@ -64,6 +65,7 @@ function App() {
             <Route path="/food-license/fssai/food-license-registration" element={<FSSAILicense />}/>
             <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
             <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
+            <Route path="/" element={<Intro />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>

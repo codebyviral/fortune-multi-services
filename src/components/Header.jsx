@@ -44,7 +44,7 @@ const Header = () => {
   const menuItems = [
     {
       title: "REGISTRATIONS",
-      path: "/registrations",
+      path: "#",
       submenus: [
         {
           title: "Company Registration",
@@ -62,7 +62,7 @@ const Header = () => {
         },
         {
           title: "Govt Registrations",
-          path: "/registrations/government",
+          path: "#",
           items: [
             "Labour License",
             "GHMC Trade License",
@@ -77,7 +77,7 @@ const Header = () => {
     },
     {
       title: "FOOD LICENSE",
-      path: "/food-license",
+      path: "#",
       submenus: [
         {
           title: "FSSAI License",
@@ -88,7 +88,7 @@ const Header = () => {
     },
     {
       title: "TRADEMARK",
-      path: "/trademark",
+      path: "#",
       submenus: [
         {
           title: "Trademark Services",
@@ -99,7 +99,7 @@ const Header = () => {
     },
     {
       title: "GST",
-      path: "/gst",
+      path: "#",
       alignCenter: true, 
       submenus: [
         {
@@ -111,7 +111,7 @@ const Header = () => {
     },
     {
       title: "TAX",
-      path: "/tax-compliances",
+      path: "#",
       alignCenter: true,
       submenus: [
         {
@@ -123,7 +123,7 @@ const Header = () => {
     },
     {
       title: "Our Profile",
-      path: "/our_Profile",
+      path: "#",
       alignCenter: true, // Add this property to center align the dropdown
       submenus: [{ title: "Our_Profile", path: "/our_profile", items: ["AboutUsPage", "            ", "Contact Us"] }],
     },
