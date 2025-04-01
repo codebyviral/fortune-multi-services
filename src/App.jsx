@@ -13,7 +13,7 @@ import StartupIndiaRegistration from "./pages/StartupRegistration";
 import LLPPage from "./pages/LLPPage";
 import SocietyPage from "./pages/SocietyPage";
 import LabourLicense from "./pages/LabourLicense";
-
+import MunicipalTradeLicense from "./pages/MunicipalTradeLicense";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -39,7 +39,8 @@ function App() {
             <Route path="/registrations/company/startup-registration" element={<StartupIndiaRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
-            <Route path="registrations/government/labour-license" element={<LabourLicense />} />
+            <Route path="/registrations/government/labour-license" element={<LabourLicense />} />
+            <Route path="/registrations/government/municipal-trade-license" element={<MunicipalTradeLicense />} />
 
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
