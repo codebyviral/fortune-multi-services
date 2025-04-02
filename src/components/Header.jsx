@@ -166,14 +166,14 @@ const Header = () => {
               <span className="sr-only">YouTube</span>
             </a>
             <a
-              href="#"
+              href="/our_profile/aboutuspage"
               className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full transition-all transform hover:scale-110 hover:-rotate-6"
             >
               <FileText size={16} />
               <span className="sr-only">Blog</span>
             </a>
             <Link
-              to="/book"
+              to="/our_profile/contact-us"
               className="bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white px-4 py-1.5 rounded-md font-medium transition-all transform hover:scale-105 flex items-center gap-1.5 shadow-md"
             >
               <Calendar size={16} />
@@ -186,12 +186,14 @@ const Header = () => {
       {/* Main Header */}
       <div className={`bg-white py-3 px-4 md:px-8 transition-all duration-300 ${scrolled ? "py-2" : ""}`}>
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className="flex flex-col relative z-10 group">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-indigo-700 bg-clip-text text-transparent group-hover:from-blue-700 group-hover:to-indigo-600 transition-all">
-              Fortune Multi
-            </span>
-            <span className="text-lg text-blue-600 -mt-1 group-hover:text-blue-500 transition-colors">Services</span>
-          </Link>
+        <Link to="/" className="flex items-center relative z-10 group">
+    <img 
+        src="/LogoHead.png" 
+        alt="Fortune Multi Services Logo" 
+        className="h-12 w-auto transition-transform group-hover:scale-105"
+    />
+</Link>
+
 
           <button
             className="md:hidden bg-blue-50 p-2 rounded-md text-blue-800 hover:bg-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
