@@ -2,6 +2,12 @@
   export default function Registrations({ type }) {
     return (
       <div className="py-12">
+        <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
         <h1 className="text-3xl font-bold text-blue-900 mb-6">
           {type === "company" ? "Company Registrations" : 
            type === "government" ? "Government Registrations" : 

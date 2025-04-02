@@ -2,6 +2,12 @@ export default function PartnershipFirmRegistration() {
     return (
         <div style={{ fontFamily: 'Arial, sans-serif', margin: '0 auto', maxWidth: '1200px', padding: '20px' }}>
             {/* Heading */}
+            <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
             <h1 style={{ fontSize: '2em' , marginBottom: '20px', color: '#2243b6' }}>
                 Partnership Firm Registration in Hyderabad
             </h1>
