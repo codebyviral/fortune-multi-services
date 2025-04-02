@@ -4,7 +4,7 @@ const MunicipalTradeLicensePage = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
       <header className="mb-8 border-b pb-4">
-        <h1 className="text-4xl font-bold text-blue-800">Municipal Trade License</h1>
+        <h1 className="text-3xl font-bold text-blue-800">Municipal Trade License</h1>
         <p className="mt-2 text-gray-600">
           Essential information for businesses operating within municipal limits
         </p>
@@ -370,9 +370,6 @@ const MunicipalTradeLicensePage = () => {
         <div className="bg-blue-100 p-6 rounded-lg text-center">
           <p className="font-semibold text-blue-800 text-lg">
             💡 <strong>Need a Trade License? Apply through your city's Municipal Corporation website or consult a legal expert.</strong> 🚀
-          </p>
-          <p className="mt-4 text-blue-700">
-            Let us know if you need further details! 😊
           </p>
         </div>
       </section>
