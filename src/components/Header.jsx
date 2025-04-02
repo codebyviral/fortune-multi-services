@@ -62,7 +62,7 @@ const Header = () => {
         },
         {
           title: "Govt Registrations",
-          path: "#",
+          path: "/gov",
           items: [
             "Labour License",
             "GHMC Trade License",
