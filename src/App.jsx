@@ -56,8 +56,8 @@ function App() {
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
-            <Route path="registrations/government/labour-license" element={<LabourLicense />} />
-            {/* 404 Route */}
+            <Route path="/gov/labour-license" element={<LabourLicense />} />
+            
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
             <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
