@@ -43,6 +43,17 @@ const Header = () => {
 
   const menuItems = [
     {
+      title: "WEB SERVICES",
+      path: "#",
+      submenus: [
+        {
+          title: "WEBORIUM",
+          path: "/WEBORIUM",
+          items: ["WEBORIUM"],
+        },
+      ],
+    },
+    {
       title: "REGISTRATIONS",
       path: "#",
       submenus: [
@@ -188,9 +199,9 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center relative z-10 group">
     <img 
-        src="/LogoHead.png" 
+        src="/FMS.png" 
         alt="Fortune Multi Services Logo" 
-        className="h-12 w-auto transition-transform group-hover:scale-105"
+        className="h-25 w-auto transition-transform group-hover:scale-105"
     />
 </Link>
 
