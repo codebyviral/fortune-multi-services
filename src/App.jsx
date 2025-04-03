@@ -16,6 +16,9 @@ import SocietyPage from "./pages/SocietyPage";
 
 import LabourLicense from "./pages/LabourLicense";
 
+import MunicipalTradeLicense from "./pages/MunicipalTradeLicense";
+import NotFound from "./pages/NotFound";
+
 
 import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
@@ -58,8 +61,14 @@ function App() {
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
-            <Route path="/gov/labour-license" element={<LabourLicense />} />
-            
+
+            <Route path="/registrations/government/labour-license" element={<LabourLicense />} />
+            <Route path="/registrations/government/municipal-trade-license" element={<MunicipalTradeLicense />} />
+
+
+            <Route path="registrations/government/labour-license" element={<LabourLicense />} />
+
+            {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
             <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
