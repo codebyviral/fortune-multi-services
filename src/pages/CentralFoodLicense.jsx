@@ -162,7 +162,7 @@ const CentralFoodLicense = () => {
       {/* Why Choose Us Section */}
       <section className="mb-16 bg-blue-50 p-8 rounded-2xl border border-blue-200">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-          Why Choose <span className="text-blue-600">Invention Tax Solutions</span>?
+          Why Choose <span className="text-blue-600"> FORTUNE MULTI SERVICES</span>?
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
