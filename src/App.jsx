@@ -31,7 +31,9 @@ import TrademarkObjection from "./pages/TrademarkObjection"
 import FSSAILicense from "./pages/FSSAILicense";
 import StateFoodLicense from "./pages/StateFoodLicense";
 import CentralFoodLicense from "./pages/CentralFoodLicense";
-import Intro from "./pages/Intro"
+import Intro from "./pages/Intro";
+import WeboriumServices from "./components/WeboriumServices";
+
 function App() {
   return (
     <Router>
@@ -73,6 +75,7 @@ function App() {
             <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
             <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
             <Route path="/" element={<Intro />}/>
+            <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>

@@ -43,6 +43,17 @@ const Header = () => {
 
   const menuItems = [
     {
+      title: "WEB SERVICES",
+      path: "#",
+      submenus: [
+        {
+          title: "WEBORIUM",
+          path: "/WEBORIUM",
+          items: ["WEBORIUM"],
+        },
+      ],
+    },
+    {
       title: "REGISTRATIONS",
       path: "#",
       submenus: [
