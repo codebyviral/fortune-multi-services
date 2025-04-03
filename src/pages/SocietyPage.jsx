@@ -15,6 +15,12 @@ const SocietyRegistrationPage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-yellow-50 to-rose-50">
       {/* Header */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <header className="bg-gradient-to-r from-amber-500 to-rose-500 py-16 px-4 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           {[...Array(8)].map((_, i) => (
