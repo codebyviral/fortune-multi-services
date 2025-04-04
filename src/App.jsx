@@ -17,6 +17,9 @@ import MunicipalPage from "./pages/MunicipalPage";
 import SocietyPage from "./pages/SocietyPage";
 import PFRegistration from "./pages/PFRegistration";
 import LabourLicense from "./pages/LabourLicense";
+import GHMCRegistration from "./pages/GHMCRegistration";
+import ISORegistration from "./pages/ISORegistration";
+import ESIRegistration from "./pages/ESIRegistration";
 import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
 import GSTRegistration from "./pages/GSTRegistration";
@@ -75,6 +78,10 @@ function App() {
             <Route path="/food-license/fssai/food-license-registration" element={<FSSAILicense />}/>
             <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
             <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
+            <Route path="gov/ghmc-trade-license" element={<GHMCRegistration />}/>
+            <Route path="/gov/iso-registration" element={<ISORegistration />}/>
+            <Route path="/gov/esi-registration" element={<ESIRegistration />}/>
+
             <Route path="/" element={<Intro />}/>
             <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
             < Route path="*" element={<NotFound />} />
