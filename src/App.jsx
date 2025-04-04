@@ -6,22 +6,21 @@ import ContactForm from "./pages/ContactForm";
 import Registrations from "./pages/Registration";
 import ProprietorshipPage from "./pages/ProprietorshipPage";
 import PVTLTDPage from "./pages/PVTLTDPage";
+import IECCodeRegistration from "./pages/IECCodeRegistration";
 import PartnershipFirmRegistration from "./pages/PartnershipFirm";
 import OPCRegistration from "./pages/OPCRegistration";
 import StartupIndiaRegistration from "./pages/StartupRegistration";
 import IncomeTaxFiling from "./pages/IncomeTaxFiling";
 import UdyamRegistration from "./pages/UdyamRegistration";
 import LLPPage from "./pages/LLPPage";
+import MunicipalPage from "./pages/MunicipalPage";
 import SocietyPage from "./pages/SocietyPage";
-
+import PFRegistration from "./pages/PFRegistration";
 import LabourLicense from "./pages/LabourLicense";
-
-
 import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
 import GSTRegistration from "./pages/GSTRegistration";
 import GSTReturns from "./pages/GSTReturns"
-
 import NotFound from "./pages/NotFound";
 import GSTModifications from "./pages/GSTModifications";
 import TrademarkRegistration from "./pages/TrademarkRegistration";
@@ -58,8 +57,10 @@ function App() {
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
+            <Route path="/gov/iec-code-registration" element={<IECCodeRegistration />} />
+            <Route path="/gov/pf-registration" element={<PFRegistration />} />
+            <Route path="/gov/municipal-trade-license" element={<MunicipalPage />} />
             <Route path="/gov/labour-license" element={<LabourLicense />} />
-            
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
             <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
