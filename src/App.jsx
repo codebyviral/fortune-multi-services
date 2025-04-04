@@ -14,6 +14,7 @@ import IncomeTaxFiling from "./pages/IncomeTaxFiling";
 import UdyamRegistration from "./pages/UdyamRegistration";
 import LLPPage from "./pages/LLPPage";
 import SocietyPage from "./pages/SocietyPage";
+import PFRegistration from "./pages/PFRegistration";
 import LabourLicense from "./pages/LabourLicense";
 import IncomeTaxAudit from "./pages/IncomeTaxAudit";
 import ProfessionalTaxRegistration from "./pages/ProfessionalTaxRegistration";
@@ -56,6 +57,7 @@ function App() {
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
             <Route path="/gov/iec-code-registration" element={<IECCodeRegistration />} />
+            <Route path="/gov/pf-registration" element={<PFRegistration />} />
             <Route path="/gov/labour-license" element={<LabourLicense />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
