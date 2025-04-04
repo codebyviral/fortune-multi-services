@@ -13,6 +13,7 @@ import StartupIndiaRegistration from "./pages/StartupRegistration";
 import IncomeTaxFiling from "./pages/IncomeTaxFiling";
 import UdyamRegistration from "./pages/UdyamRegistration";
 import LLPPage from "./pages/LLPPage";
+import MunicipalPage from "./pages/MunicipalPage";
 import SocietyPage from "./pages/SocietyPage";
 import PFRegistration from "./pages/PFRegistration";
 import LabourLicense from "./pages/LabourLicense";
@@ -58,6 +59,7 @@ function App() {
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
             <Route path="/gov/iec-code-registration" element={<IECCodeRegistration />} />
             <Route path="/gov/pf-registration" element={<PFRegistration />} />
+            <Route path="/gov/municipal-trade-license" element={<MunicipalPage />} />
             <Route path="/gov/labour-license" element={<LabourLicense />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
