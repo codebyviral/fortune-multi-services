@@ -76,13 +76,6 @@ const ExpertServices = () => {
           <p className="text-gray-600 mb-6 text-lg">
             Explore our full range of business services
           </p>
-          <a 
-            href="#"
-            className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            View All Services
-            <ArrowRight className="ml-2" size={18} />
-          </a>
         </div>
       </div>
     </section>

@@ -23,17 +23,6 @@ const ServiceCard = ({
       <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
         {description}
       </p>
-      
-      <a 
-        href="#" 
-        className="inline-flex items-center gap-1 text-blue-600 font-medium group-hover:text-blue-800 transition-colors duration-200"
-      >
-        <span>Know More</span>
-        <ArrowRight 
-          size={16} 
-          className="transition-transform duration-200 group-hover:translate-x-1" 
-        />
-      </a>
     </div>
   );
 };

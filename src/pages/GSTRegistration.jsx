@@ -11,7 +11,7 @@ const GSTRegistration = () => {
       <br />
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-blue-700 text-center mb-6">
-          GST Registration in Hyderabad
+          GST Registration
         </h1>
         <p className="text-gray-700 leading-relaxed">
           The Goods and Services Tax (GST) is one of the most significant tax reforms in India.

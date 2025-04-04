@@ -43,6 +43,13 @@ const Header = () => {
 
   const menuItems = [
     {
+      title: "HOME",
+      path: "/",
+      submenus: [
+        
+      ],
+    },
+    {
       title: "WEB SERVICES",
       path: "#",
       submenus: [

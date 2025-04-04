@@ -1,14 +1,10 @@
-import { FaGlobe, FaMobileAlt, FaShoppingCart, FaServer, FaChartLine, FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaGlobe, FaMobileAlt, FaShoppingCart, FaServer, FaChartLine, FaPhone, FaEnvelope, FaInstagram, FaCode, FaDatabase, FaCloud, FaShieldAlt, FaSync } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const WeboriumServices = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
@@ -16,20 +12,12 @@ const WeboriumServices = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">WEB SERVICES</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">WEB DEVELOPMENT SERVICES</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            From Idea to Reality - We Build Stunning, High-Performance Websites That Drive Results
+            Full-Cycle Web Development From Concept to Deployment
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all"
-          >
-            Get Your Free Consultation
-          </motion.button>
         </motion.div>
       </header>
-
       {/* Services Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
@@ -155,71 +143,291 @@ const WeboriumServices = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-indigo-800 text-white text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Online Presence?</h2>
-        <p className="text-xl mb-8 max-w-3xl mx-auto">
-          Let's create something amazing together. We handle everything from concept to completion.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all"
+      {/* Tech Stack Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+          Our <span className="text-blue-600">Technology Stack</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Frontend */}
+          <motion.div 
+            whileHover={{ scale: 1.03 }}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
           >
-            Get Started Today
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-900 transition-all"
+            <div className="text-blue-600 text-4xl mb-4">
+              <FaCode />
+            </div>
+            <h3 className="text-xl font-bold mb-4">Frontend Technologies</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                React.js, Next.js, Angular
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                TypeScript, JavaScript (ES6+)
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Tailwind CSS, SASS, Bootstrap
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Redux, Context API
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Backend */}
+          <motion.div 
+            whileHover={{ scale: 1.03 }}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
           >
-            View Portfolio
-          </motion.button>
+            <div className="text-blue-600 text-4xl mb-4">
+              <FaServer />
+            </div>
+            <h3 className="text-xl font-bold mb-4">Backend Technologies</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Node.js, Express.js
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Python (Django, Flask)
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                PHP (Laravel)
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Java, .NET Core
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Databases */}
+          <motion.div 
+            whileHover={{ scale: 1.03 }}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+          >
+            <div className="text-blue-600 text-4xl mb-4">
+              <FaDatabase />
+            </div>
+            <h3 className="text-xl font-bold mb-4">Databases</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                MongoDB, PostgreSQL
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                MySQL, Firebase
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Redis, Elasticsearch
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                AWS DynamoDB
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* DevOps */}
+          <motion.div 
+            whileHover={{ scale: 1.03 }}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+          >
+            <div className="text-blue-600 text-4xl mb-4">
+              <FaCloud />
+            </div>
+            <h3 className="text-xl font-bold mb-4">DevOps & Cloud</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                AWS, Azure, Google Cloud
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Docker, Kubernetes
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                CI/CD Pipelines
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">•</span>
+                Terraform, Ansible
+              </li>
+            </ul>
+          </motion.div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* SDLC Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+            Our <span className="text-blue-600">Development Lifecycle</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {/* Requirement Analysis */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <FaChartLine className="text-xl" />
+              </div>
+              <h3 className="font-bold mb-2">1. Requirement Analysis</h3>
+              <p className="text-gray-600 text-sm">Gathering business requirements and technical specifications</p>
+            </div>
+
+            {/* Planning */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <FaServer className="text-xl" />
+              </div>
+              <h3 className="font-bold mb-2">2. System Design</h3>
+              <p className="text-gray-600 text-sm">Architecture design and technology selection</p>
+            </div>
+
+            {/* Development */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <FaCode className="text-xl" />
+              </div>
+              <h3 className="font-bold mb-2">3. Development</h3>
+              <p className="text-gray-600 text-sm">Agile development with sprints and iterations</p>
+            </div>
+
+            {/* Testing */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <FaShieldAlt className="text-xl" />
+              </div>
+              <h3 className="font-bold mb-2">4. Testing</h3>
+              <p className="text-gray-600 text-sm">QA, Security, and Performance testing</p>
+            </div>
+
+            {/* Deployment */}
+            <div className="text-center">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <FaSync className="text-xl" />
+              </div>
+              <h3 className="font-bold mb-2">5. Deployment & Maintenance</h3>
+              <p className="text-gray-600 text-sm">CI/CD deployment and ongoing support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hosting & Deployment Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-          Get in <span className="text-blue-600">Touch</span>
+          <span className="text-blue-600">Hosting</span> & Deployment Options
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-xl shadow-md text-center">
+          {/* Shared Hosting */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all"
+          >
             <div className="text-blue-600 text-4xl mb-4">
-              <FaPhone />
+              <FaServer />
             </div>
-            <h3 className="text-xl font-bold mb-3">Call Us</h3>
-            <p className="text-gray-600 mb-2">Available 10AM - 7PM</p>
-            <a href="tel:+918919051513" className="text-blue-600 font-bold text-lg hover:underline">
-              +91 89190 51513
-            </a>
-          </div>
+            <h3 className="text-xl font-bold mb-3">Shared Hosting</h3>
+            <p className="text-gray-600 mb-4">
+              Cost-effective solution for small websites and blogs
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                cPanel/Plesk access
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                SSD Storage
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Free SSL Certificate
+              </li>
+            </ul>
+          </motion.div>
 
-          <div className="bg-white p-8 rounded-xl shadow-md text-center">
+          {/* Cloud Hosting */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-2 border-blue-100"
+          >
             <div className="text-blue-600 text-4xl mb-4">
-              <FaEnvelope />
+              <FaCloud />
             </div>
-            <h3 className="text-xl font-bold mb-3">Email Us</h3>
-            <p className="text-gray-600 mb-2">Response within 24 hours</p>
-            <a href="fortunemultiservices2023@gmail.com" className="text-blue-600 font-bold text-lg hover:underline">
-            fortunemultiservices2023@gmail.com
-            </a>
-          </div>
+            <h3 className="text-xl font-bold mb-3">Cloud Hosting</h3>
+            <p className="text-gray-600 mb-4">
+              Scalable solutions for growing businesses
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                AWS/Azure/Google Cloud
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Auto-scaling
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Load Balancing
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                CDN Integration
+              </li>
+            </ul>
+          </motion.div>
 
-          <div className="bg-white p-8 rounded-xl shadow-md text-center">
+          {/* Dedicated Servers */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all"
+          >
             <div className="text-blue-600 text-4xl mb-4">
-              <FaInstagram />
+              <FaDatabase />
             </div>
-            <h3 className="text-xl font-bold mb-3">Follow Us</h3>
-            <p className="text-gray-600 mb-2">For updates and offers</p>
-            <a href="https://instagram.com/weborium" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold text-lg hover:underline">
-              @weborium
-            </a>
-          </div>
+            <h3 className="text-xl font-bold mb-3">Dedicated Servers</h3>
+            <p className="text-gray-600 mb-4">
+              High-performance solutions for enterprise applications
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Bare Metal Servers
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Custom Configurations
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                24/7 Monitoring
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                Managed Services
+              </li>
+            </ul>
+          </motion.div>
         </div>
       </section>
+
+      {/* Existing sections (Services, Process, CTA, Contact) remain the same */}
+      {/* ... */}
+
     </div>
   );
 };

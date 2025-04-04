@@ -14,11 +14,6 @@ const StateFoodLicense = () => {
         <p className="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto">
           Complete Guide to FSSAI Compliance in Telangana
         </p>
-        <div className="flex justify-center">
-          <button className="bg-white text-blue-700 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Get Started Now
-          </button>
-        </div>
       </div>
 
       {/* Benefits Section with Icons */}

@@ -13,16 +13,8 @@ const CentralFoodLicense = () => {
       <div className="bg-gradient-to-r from-blue-800 to-blue-600 rounded-2xl text-white p-8 md:p-12 mb-16 shadow-xl">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Central Food License Registration</h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-          Nationwide Compliance for Food Businesses in Telangana
+          Nationwide Compliance for Food Businesses
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-white text-blue-700 hover:bg-blue-50 font-bold py-3 px-8 rounded-full text-lg transition-all">
-            Start Application
-          </button>
-          <button className="border-2 border-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full text-lg transition-all">
-            Speak to Expert
-          </button>
-        </div>
       </div>
 
       {/* Introduction */}

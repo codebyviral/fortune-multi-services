@@ -1,32 +1,56 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaPhone, FaMapMarkerAlt, FaChevronLeft, FaChevronRight, FaGoogle, FaStar, FaRegEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   const footerLinks = [
     {
       title: "Start A Business",
       color: "border-blue-500",
       dotColor: "bg-blue-500",
-      items: ['Solo Proprietor Firm', 'Partnership Firm', 'Private Limited Company', 'LLP Registration', 'OPC Registration']
+      items: [
+        { name: 'Solo Proprietor Firm', path: '/registrations/company/proprietorship-firm' },
+        { name: 'Partnership Firm', path: '/registrations/company/partnership-firm' },
+        { name: 'Private Limited Company', path: '/registrations/company/pvt-ltd-registration' },
+        { name: 'LLP Registration', path: '/registrations/company/llp-registration' },
+        { name: 'OPC Registration', path: '/registrations/company/opc-registration' }
+      ]
     },
     {
       title: "License",
       color: "border-green-500",
       dotColor: "bg-green-500",
-      items: ['Food FSSAI License', 'Trade License', 'IEC Registration', 'Labour License', 'Drug License']
+      items: [
+        { name: 'Food FSSAI License', path: '/food-license/fssai/food-license-registration' },
+        { name: 'Trade License', path: '/registrations/government' },
+        { name: 'IEC Registration', path: '/registrations/government' },
+        { name: 'Labour License', path: '/gov/labour-license' },
+        { name: 'Drug License', path: '/registrations/government' }
+      ]
     },
     {
       title: "Registrations",
       color: "border-purple-500",
       dotColor: "bg-purple-500",
-      items: ['TradeMark registration', 'Society Registration', 'ESI registration', 'MSME Registration', 'PF Registration']
+      items: [
+        { name: 'TradeMark registration', path: '/trademark/services/trademark-registration' },
+        { name: 'Society Registration', path: '/registrations/company/society-registration' },
+        { name: 'ESI registration', path: '/registrations/government' },
+        { name: 'MSME Registration', path: '/registrations/company/udyam-registration' },
+        { name: 'PF Registration', path: '/registrations/government' }
+      ]
     },
     {
       title: "Goods & Services Tax",
       color: "border-orange-500",
       dotColor: "bg-orange-500",
-      items: ['GST Registration', 'GST Returns Filing', 'GST Modification', 'GST Cancelation', 'GST E-Way Bills']
+      items: [
+        { name: 'GST Registration', path: '/gst/services/gst-registration' },
+        { name: 'GST Returns Filing', path: 'gst/services/gst-return-filing' },
+        { name: 'GST Modification', path: '/gst/services/gst-modifications' },
+        { name: 'GST Cancelation', path: '/gst/services/gst-modifications' },
+        { name: 'GST E-Way Bills', path: '/gst/services/gst-return-filing' }
+      ]
     }
   ];
 
@@ -129,19 +153,19 @@ const Footer = () => {
                 {section.title}
               </h3>
               <ul className="space-y-3">
-                {section.items.map((item, itemIndex) => (
-                  <motion.li 
-                    key={itemIndex} 
-                    className="flex items-center group"
-                    whileHover={{ x: 5 }}
-                  >
-                    <span className={`w-2 h-2 ${section.dotColor} rounded-full mr-3 group-hover:scale-150 transition-transform`}></span>
-                    <a href="#" className="text-gray-300 hover:text-white transition-colors hover:font-medium">
-                      {item}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
+  {section.items.map((item, itemIndex) => (
+    <motion.li 
+      key={itemIndex} 
+      className="flex items-center group"
+      whileHover={{ x: 5 }}
+    >
+      <span className={`w-2 h-2 ${section.dotColor} rounded-full mr-3 group-hover:scale-150 transition-transform`}></span>
+      <Link to={item.path} className="text-gray-300 hover:text-white transition-colors hover:font-medium">
+        {item.name}
+      </Link>
+    </motion.li>
+  ))}
+</ul>
             </motion.div>
           ))}
         </div>
@@ -444,8 +468,8 @@ const Footer = () => {
       {/* WhatsApp Button */}
       <motion.button
         className="bg-[#25D366] text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 2.1 }}
-        whileTap={{ scale: 1.95 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
         onClick={() => window.open("https://wa.me/918919051513", "_blank")}
         title="WhatsApp"
       >
@@ -457,8 +481,8 @@ const Footer = () => {
       {/* Call Button */}
       <motion.button
         className="bg-green-600 text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 2.1 }}
-        whileTap={{ scale: 1.95 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
         onClick={() => window.location.href = "tel:+918919051513"}
         title="Call Now"
       >
@@ -468,22 +492,18 @@ const Footer = () => {
       </motion.button>
 
       {/* Location Button */}
-      <motion.button
-        className="bg-red-600 text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 2.1 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => window.open("https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8", "_blank")}
-        title="Our Location"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      </motion.button>
+      <motion.a 
+  href="https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-white transition-colors hover:underline"
+  whileHover={{ scale: 1.05 }}
+>
+  Sitemap
+</motion.a>
     </div>
   </div>
-</div>
-    </footer>
+</div>    </footer>
   );
 };
 

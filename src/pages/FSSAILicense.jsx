@@ -14,14 +14,11 @@ const FSSAILicense = () => {
         <div className="relative z-10 py-16 px-6 sm:py-24 sm:px-12 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-              FSSAI License Registration in <span className="text-yellow-300">Hyderabad</span>
+              FSSAI License Registration in <span className="text-yellow-300"></span>
             </h1>
             <p className="text-xl md:text-2xl font-light mb-6">
               Complete compliance solution for food businesses in Telangana
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-              Start Your Application
-            </button>
           </div>
           <div className="md:w-1/2 flex justify-center">
           </div>
@@ -125,9 +122,6 @@ const FSSAILicense = () => {
                     </li>
                   ))}
                 </ul>
-                <button className={`mt-6 w-full py-2 rounded-lg font-medium text-white bg-gradient-to-r ${color} hover:opacity-90 transition-opacity`}>
-                  Learn More
-                </button>
               </div>
             </div>
           ))}
@@ -188,9 +182,6 @@ const FSSAILicense = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg">
             <span>Call: +91 8919051513</span>
-          </button>
-          <button className="bg-transparent border-2 border-white hover:bg-blue-800 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
-            Get Free Consultation
           </button>
         </div>
       </section>

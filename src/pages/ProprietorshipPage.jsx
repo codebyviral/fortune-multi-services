@@ -1,391 +1,325 @@
 import React from 'react';
+import { FaCheck, FaLightbulb, FaShieldAlt, FaChartLine, FaHandshake, FaFileAlt, FaUserTie, FaStore, FaGlobe, FaBalanceScale } from 'react-icons/fa';
 
 const ProprietorshipPage = () => {
   return (
-    <div className=" ">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-        
-        {/* Header */}
-        <div className="bg-indigo-700 text-white p-8 text-center">
-          <h1 className="text-3xl font-bold">Proprietorship Firm</h1>
-          <p className="mt-2 text-indigo-100">The simplest form of business ownership</p>
-        </div>
-        
-        {/* Content */}
-        <div className="p-6 space-y-12">
-          
-          {/* Overview Section */}
-          <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200">
-              What is a Sole Proprietorship Firm?
-            </h2>
-            <p className="mt-4 text-gray-700 leading-relaxed">
-              A Sole Proprietorship Firm is the simplest and most common form of business, owned and managed by a single individual. 
-              The proprietor (owner) has complete control over the business, including its operations, profits, and liabilities. 
-              There is no legal distinction between the owner and the business, meaning the proprietor is personally responsible for all debts and losses.
-            </p>
-            
-            <div className="mt-6 bg-indigo-50 p-5 rounded-lg">
-              <h3 className="text-lg font-medium text-indigo-700">Key Points:</h3>
-              <ul className="mt-3 space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-indigo-500 mr-2">•</span>
-                  <span>Single individual owns, manages, and controls the business</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-500 mr-2">•</span>
-                  <span>Not a separate legal entity from the owner</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-500 mr-2">•</span>
-                  <span>Popular among small traders, freelancers, consultants, and service providers</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-500 mr-2">•</span>
-                  <span>Minimal regulatory compliance and direct control</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          {/* Key Features Section */}
-          <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200">
-              Key Features of a Proprietorship Firm
-            </h2>
-            
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">Single Ownership</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• Business owned and operated by a single individual</li>
-                  <li>• Owner responsible for all aspects of the business</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">No Legal Distinction</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• No separate legal entity from the owner</li>
-                  <li>• Business and owner treated as same for legal and tax purposes</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">Unlimited Liability</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• Proprietor personally liable for all business debts</li>
-                  <li>• Personal assets can be used to settle business debts</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">Ease of Formation</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• Easiest and least expensive business type to set up</li>
-                  <li>• Minimal legal formalities required</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">Taxation</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• Income taxed as personal income of the owner</li>
-                  <li>• No separate business tax structure</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-medium text-indigo-600">Full Control</h3>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>• Complete control over business decisions</li>
-                  <li>• No interference from partners or directors</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          {/* Advantages and Disadvantages Section */}
-          <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200">
-              Advantages of Proprietorship Firm Registration
-            </h2>
-            
-            <div className="mt-6 space-y-4">
-              <div className="bg-green-50 p-5 rounded-lg border border-green-100">
-                <h3 className="text-lg font-medium text-green-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-green-100 rounded-full text-green-600 flex items-center justify-center">1</span>
-                  Simplicity
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  One of the most significant advantages of a <em>sole proprietorship</em> is the ease of setup and maintenance. There's no need for complex paperwork or compliance requirements, unlike private limited companies or LLPs.
-                </p>
-              </div>
-              
-              <div className="bg-green-50 p-5 rounded-lg border border-green-100">
-                <h3 className="text-lg font-medium text-green-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-green-100 rounded-full text-green-600 flex items-center justify-center">2</span>
-                  Full Control
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  As the sole owner, you have complete control over the business decisions, which allows you to steer the business in any direction without needing approval from shareholders or partners.
-                </p>
-              </div>
-              
-              <div className="bg-green-50 p-5 rounded-lg border border-green-100">
-                <h3 className="text-lg font-medium text-green-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-green-100 rounded-full text-green-600 flex items-center justify-center">3</span>
-                  Tax Flexibility
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  Income from the business is treated as the individual's income, meaning tax filings are relatively straightforward. There is no need to file separate returns for the business.
-                </p>
-              </div>
-              
-              <div className="bg-green-50 p-5 rounded-lg border border-green-100">
-                <h3 className="text-lg font-medium text-green-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-green-100 rounded-full text-green-600 flex items-center justify-center">4</span>
-                  Minimal Compliance
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  <strong>Proprietorship firms</strong> are not subjected to audits or strict corporate compliance norms, making it easier for small businesses to operate without much hassle.
-                </p>
-              </div>
-              
-              <div className="bg-green-50 p-5 rounded-lg border border-green-100">
-                <h3 className="text-lg font-medium text-green-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-green-100 rounded-full text-green-600 flex items-center justify-center">5</span>
-                  Profit Retention
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  All the profits generated by the firm belong to the owner, which isn't the case with other business entities that share profits among partners or shareholders.
-                </p>
-              </div>
-            </div>
-            
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200 mt-10">
-              Disadvantages of a Proprietorship Firm
-            </h2>
-            <p className="mt-4 text-gray-700 italic">
-              While the simplicity of a proprietorship firm is an advantage, it also comes with certain downsides:
-            </p>
-            
-            <div className="mt-6 space-y-4">
-              <div className="bg-red-50 p-5 rounded-lg border border-red-100">
-                <h3 className="text-lg font-medium text-red-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-red-100 rounded-full text-red-600 flex items-center justify-center">1</span>
-                  Unlimited Liability
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  The business owner is personally liable for all debts and liabilities. This means that personal assets may be at risk if the business incurs significant losses.
-                </p>
-              </div>
-              
-              <div className="bg-red-50 p-5 rounded-lg border border-red-100">
-                <h3 className="text-lg font-medium text-red-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-red-100 rounded-full text-red-600 flex items-center justify-center">2</span>
-                  Limited Growth Potential
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  Proprietorships are often seen as less credible than private limited companies, limiting growth opportunities, especially when seeking investors or large clients.
-                </p>
-              </div>
-              
-              <div className="bg-red-50 p-5 rounded-lg border border-red-100">
-                <h3 className="text-lg font-medium text-red-700 flex items-center">
-                  <span className="inline-block mr-2 w-6 h-6 bg-red-100 rounded-full text-red-600 flex items-center justify-center">3</span>
-                  Limited Life
-                </h3>
-                <p className="mt-2 ml-8 text-gray-700">
-                  Since the business is tied to the proprietor, it can only last as long as the owner is alive or chooses to continue the business.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Registration Process Section */}
-          <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200">
-              Proprietorship Firm Registration Process
-            </h2>
-            <p className="mt-4 text-gray-700 leading-relaxed">
-              Registering a Proprietorship Firm is relatively simple compared to other business structures. 
-              The process may vary based on location, but the general steps remain the same.
-            </p>
-            
-            <div className="mt-6 space-y-6">
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  1
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Decide the Business Name</h3>
-                  <ul className="mt-2 text-gray-600 space-y-1">
-                    <li>• Choose a unique and meaningful name for your proprietorship firm</li>
-                    <li>• Ensure the name does not infringe on any existing trademark</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  2
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Choose Business Location</h3>
-                  <ul className="mt-2 text-gray-600 space-y-1">
-                    <li>• Get a Shop & Establishment Act License if you have a physical location</li>
-                    <li>• This license is required for opening a business bank account</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  3
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Apply for PAN Card (if not available)</h3>
-                  <ul className="mt-2 text-gray-600 space-y-1">
-                    <li>• Owner's PAN is used for taxation purposes</li>
-                    <li>• No separate PAN required for the business</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  4
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Obtain Necessary Business Registrations</h3>
-                  <ul className="mt-2 text-gray-600 space-y-1">
-                    <li>• GST Registration (if applicable)</li>
-                    <li>• MSME/Udyam Registration (recommended)</li>
-                    <li>• Import Export Code (if dealing in international trade)</li>
-                    <li>• Professional Tax Registration (if applicable in your state)</li>
-                    <li>• Trade License (if required by local authorities)</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  5
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Open a Business Bank Account</h3>
-                  <p className="mt-2 text-gray-600">
-                    Required documents typically include PAN Card, Aadhaar Card, 
-                    GST Registration Certificate (if applicable), and other business licenses.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  6
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Apply for Other Licenses (Industry-Specific)</h3>
-                  <p className="mt-2 text-gray-600">
-                    Depending on your business type, you may need additional licenses such as 
-                    FSSAI for food business, Drug License for pharmacy, etc.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold text-xl">
-                  7
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-800">Start Operations & Maintain Compliance</h3>
-                  <ul className="mt-2 text-gray-600 space-y-1">
-                    <li>• File Income Tax Returns annually</li>
-                    <li>• File GST returns if registered</li>
-                    <li>• Maintain basic accounting records</li>
-                    <li>• Renew licenses on time</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Benefits & Suitability Section */}
-          <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 pb-2 border-b border-indigo-200">
-              Benefits & Suitability
-            </h2>
-            
-            <div className="mt-6">
-              <h3 className="text-xl font-medium text-indigo-600">Why Register a Proprietorship Firm?</h3>
-              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-indigo-50 p-4 rounded-lg">
-                  <h4 className="font-medium text-indigo-700">Legal Recognition</h4>
-                  <p className="text-gray-600 mt-1">Helps in business expansion and credibility</p>
-                </div>
-                <div className="bg-indigo-50 p-4 rounded-lg">
-                  <h4 className="font-medium text-indigo-700">Easy Bank Loans</h4>
-                  <p className="text-gray-600 mt-1">Required for financial credibility with lenders</p>
-                </div>
-                <div className="bg-indigo-50 p-4 rounded-lg">
-                  <h4 className="font-medium text-indigo-700">Tax Benefits</h4>
-                  <p className="text-gray-600 mt-1">Allows for business deductions and exemptions</p>
-                </div>
-                <div className="bg-indigo-50 p-4 rounded-lg">
-                  <h4 className="font-medium text-indigo-700">Avoid Legal Issues</h4>
-                  <p className="text-gray-600 mt-1">Ensures compliance with local regulations</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-8">
-              <h3 className="text-xl font-medium text-indigo-600">Who Should Start a Proprietorship Firm?</h3>
-              <div className="mt-4 bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-                <ul className="space-y-4 text-gray-700">
-                  <li className="flex">
-                    <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500">
-                      ✓
-                    </div>
-                    <span className="ml-3"><strong>Small traders, shop owners, and local businesses</strong> looking for simple business structure</span>
-                  </li>
-                  <li className="flex">
-                    <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500">
-                      ✓
-                    </div>
-                    <span className="ml-3"><strong>Freelancers, consultants, and individual professionals</strong> providing services independently</span>
-                  </li>
-                  <li className="flex">
-                    <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500">
-                      ✓
-                    </div>
-                    <span className="ml-3"><strong>Online sellers</strong> on platforms like Amazon, Flipkart, Shopify, etc.</span>
-                  </li>
-                  <li className="flex">
-                    <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500">
-                      ✓
-                    </div>
-                    <span className="ml-3"><strong>Entrepreneurs starting with low investment</strong> who want minimal compliance burden</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Footer */}
-        <div className="bg-gray-100 p-6 text-center">
-          <p className="text-gray-600 text-sm">
-            This information is provided for general guidance. Please consult with a professional for specific advice.
+    <div className="bg-gray-50 min-h-screen">
+      <br/>
+      <br/>
+      <br/>
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-20">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Proprietorship Firm Registration</h1>
+          <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
+            The simplest and most flexible business structure for individual entrepreneurs
           </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center">
+              <FaUserTie className="mr-2" /> Single Ownership
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center">
+              <FaFileAlt className="mr-2" /> Minimal Compliance
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center">
+              <FaChartLine className="mr-2" /> Direct Profit Control
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-6xl mx-auto px-4 py-12 -mt-16">
+        {/* Overview Card */}
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-12">
+          <div className="p-8">
+            <h2 className="text-3xl font-bold text-indigo-800 mb-6">What is a Sole Proprietorship?</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  A <strong className="text-indigo-700">Sole Proprietorship</strong> is the simplest form of business entity where a single individual owns and operates the business. The proprietor has complete control over all business decisions and receives all profits, but is also personally responsible for all debts and liabilities.
+                </p>
+                <div className="bg-indigo-50 p-5 rounded-lg border border-indigo-100">
+                  <h3 className="text-xl font-semibold text-indigo-700 mb-3 flex items-center">
+                    <FaLightbulb className="mr-2 text-indigo-600" /> Key Characteristics
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      "Single owner with full control",
+                      "No legal distinction between owner and business",
+                      "Simplest to establish with minimal formalities",
+                      "Owner receives all profits",
+                      "Owner bears all risks and liabilities"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h3 className="text-xl font-semibold text-indigo-700 mb-4">Ideal For:</h3>
+                <div className="space-y-4">
+                  {[
+                    { icon: <FaStore />, text: "Small retailers & shop owners" },
+                    { icon: <FaUserTie />, text: "Freelancers & consultants" },
+                    { icon: <FaGlobe />, text: "Online sellers & home businesses" },
+                    { icon: <FaHandshake />, text: "Service providers & professionals" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                      <div className="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                        {item.icon}
+                      </div>
+                      <span className="font-medium text-gray-700">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Features Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center text-indigo-800 mb-12">Key Features of Proprietorship</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Single Ownership",
+                icon: <FaUserTie className="text-3xl" />,
+                color: "bg-blue-100 text-blue-600",
+                points: [
+                  "Owned by one individual",
+                  "Complete decision-making power",
+                  "No partners or shareholders"
+                ]
+              },
+              {
+                title: "Unlimited Liability",
+                icon: <FaShieldAlt className="text-3xl" />,
+                color: "bg-red-100 text-red-600",
+                points: [
+                  "Owner personally liable for debts",
+                  "Personal assets at risk",
+                  "No separation between business and personal liability"
+                ]
+              },
+              {
+                title: "Taxation",
+                icon: <FaFileAlt className="text-3xl" />,
+                color: "bg-green-100 text-green-600",
+                points: [
+                  "Business income = personal income",
+                  "Taxed at individual rates",
+                  "No separate business tax filing"
+                ]
+              },
+              {
+                title: "Easy Formation",
+                icon: <FaCheck className="text-3xl" />,
+                color: "bg-purple-100 text-purple-600",
+                points: [
+                  "Minimal legal formalities",
+                  "Low startup costs",
+                  "No registration required (in most cases)"
+                ]
+              },
+              {
+                title: "Flexible Operations",
+                icon: <FaChartLine className="text-3xl" />,
+                color: "bg-yellow-100 text-yellow-600",
+                points: [
+                  "Quick decision making",
+                  "Easy to modify business operations",
+                  "No complex governance structure"
+                ]
+              },
+              {
+                title: "Limited Life",
+                icon: <FaBalanceScale className="text-3xl" />,
+                color: "bg-indigo-100 text-indigo-600",
+                points: [
+                  "Business tied to owner's lifespan",
+                  "Difficult to transfer ownership",
+                  "Ceases with owner's death/incapacity"
+                ]
+              }
+            ].map((feature, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className={`${feature.color} p-6 text-center`}>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/30 backdrop-blur-sm mb-4">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold">{feature.title}</h3>
+                </div>
+                <div className="p-6">
+                  <ul className="space-y-3">
+                    {feature.points.map((point, i) => (
+                      <li key={i} className="flex items-start">
+                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
+                        <span className="text-gray-700">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pros and Cons Section */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="bg-green-600 p-6">
+              <h2 className="text-2xl font-bold text-white flex items-center">
+                <FaCheck className="mr-3" /> Advantages
+              </h2>
+            </div>
+            <div className="p-6">
+              {[
+                {
+                  title: "Easy to Start",
+                  content: "Minimal paperwork and legal formalities required to establish the business."
+                },
+                {
+                  title: "Complete Control",
+                  content: "Owner makes all decisions without needing approval from partners or board members."
+                },
+                {
+                  title: "Tax Benefits",
+                  content: "Business losses can offset other income on tax returns."
+                },
+                {
+                  title: "Direct Profit Retention",
+                  content: "All profits belong to the owner without sharing with partners."
+                },
+                {
+                  title: "Privacy",
+                  content: "Not required to publish financial information or reports."
+                }
+              ].map((item, index) => (
+                <div key={index} className="mb-6 last:mb-0">
+                  <h3 className="text-lg font-semibold text-green-700 mb-2">{item.title}</h3>
+                  <p className="text-gray-700">{item.content}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="bg-red-600 p-6">
+              <h2 className="text-2xl font-bold text-white flex items-center">
+                <FaBalanceScale className="mr-3" /> Disadvantages
+              </h2>
+            </div>
+            <div className="p-6">
+              {[
+                {
+                  title: "Unlimited Liability",
+                  content: "Owner's personal assets are at risk for business debts and legal actions."
+                },
+                {
+                  title: "Funding Challenges",
+                  content: "More difficult to raise capital compared to corporations."
+                },
+                {
+                  title: "Limited Growth",
+                  content: "Business growth may be constrained by owner's resources and capabilities."
+                },
+                {
+                  title: "Business Continuity",
+                  content: "Business ends if owner dies or becomes incapacitated."
+                },
+                {
+                  title: "Perception Issues",
+                  content: "May be viewed as less credible than incorporated businesses."
+                }
+              ].map((item, index) => (
+                <div key={index} className="mb-6 last:mb-0">
+                  <h3 className="text-lg font-semibold text-red-700 mb-2">{item.title}</h3>
+                  <p className="text-gray-700">{item.content}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Registration Process */}
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-16">
+          <div className="bg-indigo-700 p-8">
+            <h2 className="text-3xl font-bold text-white">Registration Process</h2>
+            <p className="text-indigo-100 mt-2">
+              While not legally required, these steps help establish your proprietorship formally
+            </p>
+          </div>
+          <div className="p-8">
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-indigo-100 transform -translate-x-1/2 md:left-1/2"></div>
+              
+              {/* Steps */}
+              <div className="space-y-12">
+                {[
+                  {
+                    step: 1,
+                    title: "Choose Business Name",
+                    content: "Select a unique name that doesn't infringe on existing trademarks",
+                    icon: <FaFileAlt />
+                  },
+                  {
+                    step: 2,
+                    title: "Obtain Licenses",
+                    content: "Get Shop & Establishment license, GST registration if applicable",
+                    icon: <FaHandshake />
+                  },
+                  {
+                    step: 3,
+                    title: "Open Bank Account",
+                    content: "Use your business name and licenses to open a dedicated account",
+                    icon: <FaChartLine />
+                  },
+                  {
+                    step: 4,
+                    title: "Register as MSME",
+                    content: "Optional but recommended for government benefits and subsidies",
+                    icon: <FaShieldAlt />
+                  },
+                  {
+                    step: 5,
+                    title: "Industry-Specific Licenses",
+                    content: "Obtain any required licenses (FSSAI, Drug License, etc.)",
+                    icon: <FaStore />
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="relative flex items-start md:odd:flex-row-reverse md:justify-between">
+                    {/* Step indicator */}
+                    <div className={`flex items-center justify-center w-10 h-10 rounded-full ${index % 2 === 0 ? 'bg-indigo-100 text-indigo-700' : 'bg-indigo-600 text-white'} font-bold z-10 flex-shrink-0 mx-auto md:mx-0`}>
+                      {item.step}
+                    </div>
+                    
+                    {/* Content card */}
+                    <div className={`mt-4 md:mt-0 md:w-[calc(50%-40px)] ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
+                      <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <div className="flex items-center mb-3">
+                          <div className={`p-3 rounded-full ${index % 2 === 0 ? 'bg-indigo-100 text-indigo-600' : 'bg-indigo-600 text-white'} mr-3`}>
+                            {item.icon}
+                          </div>
+                          <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+                        </div>
+                        <p className="text-gray-700">{item.content}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        
       </div>
     </div>
   );

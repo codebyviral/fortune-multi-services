@@ -29,16 +29,6 @@ const CallToAction = () => {
             <Phone size={20} className="flex-shrink-0" />
             Contact Us
           </a>
-          
-          <a 
-            href="#services"
-            className="inline-flex items-center justify-center px-12 py-6 border-2 border-white text-white hover:bg-white/10 
-                      text-lg font-semibold rounded-xl transition-all duration-300 transform hover:-translate-y-1 
-                      hover:scale-[1.02] gap-3 hover:border-white/80"
-          >
-            <ClipboardList size={20} className="flex-shrink-0" />
-            View Services
-          </a>
         </div>
         
         <div className="mt-16 flex flex-col items-center">
