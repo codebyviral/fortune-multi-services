@@ -199,9 +199,9 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center relative z-10 group">
     <img 
-        src="/FMS.png" 
+        src="/FMS-final.png" 
         alt="Fortune Multi Services Logo" 
-        className="h-25 w-auto transition-transform group-hover:scale-105"
+        className="h-16 w-auto transition-transform group-hover:scale-105"
     />
 </Link>
 

@@ -408,7 +408,7 @@ const Footer = () => {
               Contact Us
             </motion.a>
             <motion.a 
-              href="#" 
+              href="https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8" 
               className="hover:text-white transition-colors hover:underline"
               whileHover={{ scale: 1.05 }}
             >
