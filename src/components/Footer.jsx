@@ -444,8 +444,8 @@ const Footer = () => {
       {/* WhatsApp Button */}
       <motion.button
         className="bg-[#25D366] text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
+        whileHover={{ scale: 2.1 }}
+        whileTap={{ scale: 1.95 }}
         onClick={() => window.open("https://wa.me/918919051513", "_blank")}
         title="WhatsApp"
       >
@@ -457,8 +457,8 @@ const Footer = () => {
       {/* Call Button */}
       <motion.button
         className="bg-green-600 text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
+        whileHover={{ scale: 2.1 }}
+        whileTap={{ scale: 1.95 }}
         onClick={() => window.location.href = "tel:+918919051513"}
         title="Call Now"
       >
@@ -470,7 +470,7 @@ const Footer = () => {
       {/* Location Button */}
       <motion.button
         className="bg-red-600 text-white rounded-full p-3 flex items-center shadow-lg"
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 2.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => window.open("https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8", "_blank")}
         title="Our Location"
