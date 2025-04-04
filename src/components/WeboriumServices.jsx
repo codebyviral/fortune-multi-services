@@ -16,7 +16,7 @@ const WeboriumServices = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">WEBORIUM SERVICES</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">WEB SERVICES</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             From Idea to Reality - We Build Stunning, High-Performance Websites That Drive Results
           </p>
@@ -192,8 +192,8 @@ const WeboriumServices = () => {
             </div>
             <h3 className="text-xl font-bold mb-3">Call Us</h3>
             <p className="text-gray-600 mb-2">Available 10AM - 7PM</p>
-            <a href="tel:+918328142226" className="text-blue-600 font-bold text-lg hover:underline">
-              +91 8328142226
+            <a href="tel:+918919051513" className="text-blue-600 font-bold text-lg hover:underline">
+              +91 89190 51513
             </a>
           </div>
 
@@ -203,8 +203,8 @@ const WeboriumServices = () => {
             </div>
             <h3 className="text-xl font-bold mb-3">Email Us</h3>
             <p className="text-gray-600 mb-2">Response within 24 hours</p>
-            <a href="mailto:contact@weborium.com" className="text-blue-600 font-bold text-lg hover:underline">
-              contact@weborium.com
+            <a href="fortunemultiservices2023@gmail.com" className="text-blue-600 font-bold text-lg hover:underline">
+            fortunemultiservices2023@gmail.com
             </a>
           </div>
 
@@ -220,47 +220,6 @@ const WeboriumServices = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">WEBORIUM SERVICES</h3>
-            <p className="text-gray-400">
-              Your complete web solution provider. We transform ideas into powerful digital experiences.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">Web Design</a></li>
-              <li><a href="#" className="hover:text-white">Web Development</a></li>
-              <li><a href="#" className="hover:text-white">E-Commerce</a></li>
-              <li><a href="#" className="hover:text-white">SEO</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">About Us</a></li>
-              <li><a href="#" className="hover:text-white">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white">Testimonials</a></li>
-              <li><a href="#" className="hover:text-white">Careers</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Legal</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white">Cookie Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} WEBORIUM SERVICES. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };

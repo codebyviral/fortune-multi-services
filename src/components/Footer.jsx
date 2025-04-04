@@ -201,8 +201,8 @@ const Footer = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold">Call Us</h4>
-                  <a href="tel:+919876543210" className="text-gray-300 hover:text-white transition-colors">
-                    +91 98765 43210
+                  <a href="tel:+918919051513" className="text-gray-300 hover:text-white transition-colors">
+                    +91 8919051513
                   </a>
                 </div>
               </motion.div>
@@ -219,8 +219,8 @@ const Footer = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold">Email Us</h4>
-                  <a href="mailto:info@fortunemultiservices.com" className="text-gray-300 hover:text-white transition-colors">
-                    info@fortunemultiservices.com
+                  <a href="mailto:fortunemultiservices2023@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  fortunemultiservices2023@gmail.com
                   </a>
                 </div>
               </motion.div>
@@ -417,24 +417,30 @@ const Footer = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Floating Call Button */}
-      <div className="fixed bottom-8 right-8 z-50">
+{/* Floating Call Button */}
+<div className="fixed bottom-8 right-8 z-50">
   <div className="relative group">
     {/* Main Connect Button */}
     <motion.button
       className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full p-4 flex items-center shadow-xl hover:shadow-2xl transition-all font-medium"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      onClick={(e) => {
+        // Only toggle on mobile (below md breakpoint)
+        if (window.innerWidth < 768) {
+          const subButtons = e.currentTarget.nextElementSibling;
+          subButtons.classList.toggle('hidden');
+          subButtons.classList.toggle('flex');
+        }
+      }}
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
       </svg>
-      
     </motion.button>
 
-    {/* Sub Buttons that appear on hover */}
-    <div className="absolute bottom-full right-0 mb-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    {/* Sub Buttons - Different behavior for mobile/desktop */}
+    <div className="absolute bottom-full right-0 mb-4 space-y-2 hidden md:group-hover:flex md:group-hover:opacity-100 md:opacity-0 md:flex-col md:transition-opacity md:duration-300 flex-col">
       {/* WhatsApp Button */}
       <motion.button
         className="bg-[#25D366] text-white rounded-full p-3 flex items-center shadow-lg"
