@@ -3,6 +3,8 @@ import React from 'react';
 const IECCodeRegistration = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6 bg-gradient-to-b from-indigo-50 to-white">
+      <br/>
+      <br/>
       <header className="mb-8 bg-gradient-to-r from-purple-600 to-indigo-600 p-6 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold text-white mb-2">IEC Code Registration:</h1>
         <p className="text-gray-100 text-lg">

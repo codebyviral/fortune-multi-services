@@ -3,6 +3,8 @@ import React from 'react';
 const LabourLicensePage = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
+      <br/>
+      <br/>
       <header className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-blue-800">Labour License: A Complete Guide</h1>
         <p className="mt-2 text-gray-600">Essential information for businesses and contractors</p>

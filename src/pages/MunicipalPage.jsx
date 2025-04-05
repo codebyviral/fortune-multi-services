@@ -3,6 +3,8 @@ import React from 'react';
 const MunicipalTradeLicensePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
+      <br/>
+      <br/>
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
         {/* Header */}
         <div className="bg-blue-700 text-white px-6 py-8">

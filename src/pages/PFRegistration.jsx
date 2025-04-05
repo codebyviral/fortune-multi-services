@@ -5,9 +5,6 @@ const PFRegistrationPage = () => {
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white">
         <br>
-        
-
-        
         </br>
       <header className="mb-10 text-center">
         <h1 className="text-3xl font-bold text-blue-800 mb-2">Provident Fund (PF) Registration</h1>

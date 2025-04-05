@@ -1,110 +1,161 @@
+import { motion } from 'framer-motion';
+
 export default function ISORegistration() {
-    return (
-        <div style={{ fontFamily: 'Arial, Helvetica, sans-serif', padding: '40px 30px', backgroundColor: '#f0f0f0', marginTop: '50px', borderRadius: '8px' }}>
-            <h1 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px',paddingTop: '80px' }}>
-                ISO Certificate Registration in Hyderabad
-            </h1>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            Obtaining an <strong>ISO certificate registration</strong> is a crucial step for businesses looking to enhance their quality management systems, meet international standards, and gain a competitive edge in the market. ISO certification is recognized globally and demonstrates that a company adheres to internationally accepted management standards in areas such as quality, safety, environmental sustainability, and more. 
-            </p>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            In Hyderabad, an increasing number of businesses are seeking ISO certification to build trust with customers, improve operational efficiency, and expand their market reach.
-            </p>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            This article will provide an in-depth overview of <strong>ISO certificate registration</strong> in Hyderabad, including the types of ISO certifications available, the benefits of obtaining ISO certification, the step-by-step registration process, eligibility requirements, required documents, costs involved, and tips for maintaining compliance after certification. Whether you are a small business or a large enterprise, this guide will help you navigate the ISO certification process and reap the rewards of being ISO certified.
-            </p>
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 py-16 px-6 md:px-12 lg:px-24 font-sans">
+      <div className="max-w-5xl mx-auto bg-white/90 shadow-2xl rounded-xl p-8 md:p-12 backdrop-blur-md">
+        {/* Header */}
+        <motion.h1
+          className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mb-8 text-center pt-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          ISO Certificate Registration in Hyderabad
+        </motion.h1>
 
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            What is ISO Certification?
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-                The <strong>International Organization for Standardization</strong>(ISO) is an independent, non-governmental international organization that develops and publishes standards to ensure the quality, safety, and efficiency of products, services, and systems. ISO certification signifies that a company’s management system, manufacturing process, service, or documentation procedures comply with the relevant ISO standard.
-            </p>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            There are various ISO standards tailored to different industries and business needs, and each standard focuses on a specific aspect of the business, such as quality management, environmental management, information security, and more.
-            </p>
+        {/* Intro Section */}
+        <motion.p
+          className="text-lg text-gray-600 leading-relaxed mb-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          Obtaining an <span className="font-semibold text-blue-700">ISO certificate registration</span> is a crucial step for businesses aiming to enhance their quality management systems, meet international standards, and gain a competitive edge. Recognized globally, ISO certification showcases adherence to top-tier management standards in quality, safety, and sustainability.
+        </motion.p>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          In Hyderabad, a growing hub for innovation, businesses are increasingly pursuing ISO certification to build customer trust, boost efficiency, and expand their market presence.
+        </p>
+        <p className="text-lg text-gray-600 leading-relaxed mb-10">
+          This guide offers a comprehensive look at <span className="font-semibold text-blue-700">ISO certificate registration</span> in Hyderabad—covering types of certifications, benefits, processes, eligibility, documents, costs, and compliance tips.
+        </p>
 
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            Why is ISO Certification Important?
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            ISO certification provides numerous benefits to businesses, helping them streamline operations, reduce risks, and improve customer satisfaction. It is particularly important for businesses looking to improve their processes and meet the demands of both domestic and international markets.
-            </p>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            Key Reasons for Obtaining ISO Certification:
-            </p>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: '#555' }}>
-                <li style={{ marginBottom: '15px' }}><strong>International Recognition: </strong>ISO certification is recognized and respected globally, enhancing your company’s reputation in international markets. </li>
-                <li style={{ marginBottom: '15px' }}><strong>Improved Customer Confidence: </strong>ISO-certified companies are trusted by customers for their commitment to quality, safety, and reliability. This builds customer confidence and loyalty. </li>
-                <li style={{ marginBottom: '15px' }}><strong>Compliance with Regulations: </strong>Many industries require businesses to adhere to strict regulations related to quality, safety, and environmental standards. ISO certification ensures compliance with these regulations. </li>
-                <li style={{ marginBottom: '15px' }}><strong>Enhanced Efficiency: </strong>ISO standards help businesses implement efficient management systems that reduce waste, improve productivity, and streamline operations. </li>
-                <li style={{ marginBottom: '15px' }}><strong>Market Expansion: </strong>ISO certification is often a requirement for bidding on government contracts or working with large multinational companies. It opens doors to new business opportunities.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Continuous Improvement: </strong>ISO standards promote continuous improvement by encouraging businesses to monitor and enhance their processes regularly. </li>                
-            </ul>
+        {/* What is ISO Certification */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          What is ISO Certification?
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          The <span className="font-semibold">International Organization for Standardization (ISO)</span> is a global, independent body that sets standards for quality, safety, and efficiency. ISO certification ensures your business aligns with these standards across management, manufacturing, or services.
+        </p>
+        <p className="text-lg text-gray-600 leading-relaxed mb-10">
+          With standards tailored to industries, ISO addresses diverse needs like quality management, environmental responsibility, and data security.
+        </p>
 
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            Types of ISO Certifications Available in Hyderabad
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            There are various ISO standards, each tailored to different industries and business needs. Below are some of the most commonly sought-after ISO certifications in Hyderabad:
-            </p>
-            <ul style={{ color: '#333', fontSize: '16px',color: '#555' }}>
-                <li style={{ marginBottom: '10px' }}><strong>1.ISO 9001: Quality Management System (QMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 9001 is one of the most widely recognized ISO standards and focuses on quality management systems. It ensures that businesses consistently meet customer expectations and regulatory requirements. The standard emphasizes customer satisfaction, process improvement, and a systematic approach to managing quality.</li>
-                <li style={{ marginBottom: '10px' }}><strong>2.ISO 14001: Environmental Management System (EMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 14001 focuses on environmental management and helps businesses minimize their environmental impact. It encourages businesses to implement sustainable practices, reduce waste, and manage their environmental responsibilities effectively.</li>
-                <li style={{ marginBottom: '10px' }}><strong>3.ISO 45001: Occupational Health and Safety (OHSMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 45001 focuses on occupational health and safety management systems. It helps businesses create a safe working environment for employees, reduce workplace risks, and improve overall employee well-being.</li>
-                <li style={{ marginBottom: '10px' }}><strong>4.ISO 27001: Information Security Management System (ISMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 27001 is designed for organizations that handle sensitive information. It sets standards for information security management systems and ensures that businesses protect their data from cyber threats, breaches, and unauthorized access.</li>
-                <li style={{ marginBottom: '10px' }}><strong>5.ISO 22000: Food Safety Management System (FSMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 22000 focuses on food safety and is designed for businesses involved in the food industry, including food production, processing, and distribution. The standard ensures that businesses implement safe food handling practices and comply with food safety regulations.</li>
-                <li style={{ marginBottom: '10px' }}><strong>6.ISO 50001: Energy Management System (EnMS)</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 50001 focuses on energy management and helps businesses improve their energy efficiency, reduce energy consumption, and minimize their environmental impact. It is particularly useful for businesses with high energy usage, such as manufacturing companies.</li>
-                <li style={{ marginBottom: '10px' }}><strong>7.ISO 13485: Medical Devices Quality Management System</strong></li>
-                <li style={{ marginBottom: '10px' }}>ISO 13485 is designed for companies involved in the medical device industry. It sets standards for the design, production, and distribution of medical devices, ensuring that they meet regulatory requirements and maintain high levels of quality and safety.</li>
-            </ul>
+        {/* Why is ISO Important */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
+          Why is ISO Certification Important?
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          ISO certification streamlines operations, mitigates risks, and boosts customer satisfaction—key for thriving in local and global markets.
+        </p>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">Key Reasons:</p>
+        <ul className="list-disc pl-8 text-lg text-gray-600 space-y-4">
+          <li><span className="font-semibold">International Recognition:</span> Boosts your global reputation.</li>
+          <li><span className="font-semibold">Improved Customer Confidence:</span> Builds trust and loyalty.</li>
+          <li><span className="font-semibold">Regulatory Compliance:</span> Meets industry standards effortlessly.</li>
+          <li><span className="font-semibold">Enhanced Efficiency:</span> Reduces waste and optimizes processes.</li>
+          <li><span className="font-semibold">Market Expansion:</span> Unlocks opportunities with big players.</li>
+          <li><span className="font-semibold">Continuous Improvement:</span> Encourages ongoing growth.</li>
+        </ul>
 
-
-            
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            Benefits of Obtaining ISO Certificate Registration in Hyderabad
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            Obtaining an <strong>ISO certificate registration</strong> offers a range of benefits for businesses in Hyderabad. Whether you are a small business or a large corporation, ISO certification can help you improve your operations, meet customer expectations, and stay competitive in the market.
-            </p>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            Key Benefits of ISO Certification:
-            </p>
-            <ul style={{ listStyleType: 'disc', color: '#333', fontSize: '16px',color: '#555' }}>
-                <li style={{ marginBottom: '15px' }}><strong>Enhanced Customer Trust:</strong> ISO certification helps in gaining trust and loyalty from customers, both locally and internationally.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Legal and Regulatory Compliance:</strong> ISO standards help ensure that your business complies with legal and regulatory requirements, avoiding fines and penalties.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Market Recognition:</strong> ISO certification makes your business stand out in the competitive market, providing you with a competitive edge.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Increased Efficiency and Reduced Costs:</strong> Streamlining processes and improving quality controls help reduce errors and inefficiencies, saving time and money.</li>
-            </ul>
-
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            Documents Required for ISO Certificate Registration
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            To obtain <strong>ISO certificate registration</strong> in Hyderabad, you will need to submit certain documents to the certification body. These documents demonstrate your compliance with the ISO standard and include:
-            </p>
-            <ul style={{listStyleType: 'disc', color: '#555', fontSize: '1.1em', paddingLeft: '30px' }}>
-                <li style={{ marginBottom: '15px' }}><strong>Company Registration Certificate:</strong> Proof of your company’s legal registration.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Quality Manual:</strong>A document that outlines your company’s quality management system, including policies, procedures, and work instructions.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Process Flowcharts:</strong> Flowcharts that depict the key processes in your business and how they are managed.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Employee Training Records:</strong>Documentation of employee training related to the ISO standard.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Internal Audit Reports:</strong>Reports from internal audits conducted before the certification audit.</li>
-                <li style={{ marginBottom: '15px' }}><strong>Risk Assessment Reports:</strong>Documentation of risk assessments conducted to identify potential risks and mitigation strategies.</li>
-            </ul>
-
-            <h2 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px' }}>
-            Costs of ISO Certificate Registration in Hyderabad
-            </h2>
-            <p style={{ fontSize: '1.1em', color: '#555', lineHeight: '1.6', marginBottom: '20px' }}>
-            The cost of <strong>ISO certificate registration</strong> in Hyderabad varies depending on several factors, including the size of your business, the complexity of your processes, the type of ISO standard, and the certification body you choose.
-            </p>
-
+        {/* Types of ISO Certifications */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mt-12 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          Types of ISO Certifications Available in Hyderabad
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Hyderabad businesses can choose from a variety of ISO standards tailored to their needs:
+        </p>
+        <div className="grid gap-6">
+          {[
+            { title: "ISO 9001: Quality Management", desc: "Focuses on consistent quality and customer satisfaction." },
+            { title: "ISO 14001: Environmental Management", desc: "Promotes sustainability and waste reduction." },
+            { title: "ISO 45001: Occupational Health & Safety", desc: "Ensures a safe workplace for employees." },
+            { title: "ISO 27001: Information Security", desc: "Protects sensitive data from threats." },
+            { title: "ISO 22000: Food Safety", desc: "Ensures safe food practices in the supply chain." },
+            { title: "ISO 50001: Energy Management", desc: "Improves energy efficiency and cuts costs." },
+            { title: "ISO 13485: Medical Devices", desc: "Regulates quality in medical device production." },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
+            >
+              <h3 className="text-xl font-semibold text-indigo-600">{item.title}</h3>
+              <p className="text-gray-600">{item.desc}</p>
+            </motion.div>
+          ))}
         </div>
-    );
+
+        {/* Benefits */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mt-12 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+        >
+          Benefits of ISO Certificate Registration in Hyderabad
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          ISO certification offers Hyderabad businesses a competitive edge and operational excellence.
+        </p>
+        <ul className="list-disc pl-8 text-lg text-gray-600 space-y-4">
+          <li><span className="font-semibold">Enhanced Customer Trust:</span> Builds local and global loyalty.</li>
+          <li><span className="font-semibold">Legal Compliance:</span> Avoids penalties with ease.</li>
+          <li><span className="font-semibold">Market Recognition:</span> Stands out in a crowded market.</li>
+          <li><span className="font-semibold">Efficiency & Cost Savings:</span> Cuts waste and boosts productivity.</li>
+        </ul>
+
+        {/* Documents */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mt-12 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+        >
+          Documents Required for ISO Certificate Registration
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Prepare these documents to ensure a smooth certification process:
+        </p>
+        <ul className="list-disc pl-8 text-lg text-gray-600 space-y-4">
+          <li><span className="font-semibold">Company Registration Certificate:</span> Legal proof of your business.</li>
+          <li><span className="font-semibold">Quality Manual:</span> Outlines your management system.</li>
+          <li><span className="font-semibold">Process Flowcharts:</span> Maps key operations.</li>
+          <li><span className="font-semibold">Employee Training Records:</span> Shows standard compliance training.</li>
+          <li><span className="font-semibold">Internal Audit Reports:</span> Pre-certification audit results.</li>
+          <li><span className="font-semibold">Risk Assessment Reports:</span> Identifies and mitigates risks.</li>
+        </ul>
+
+        {/* Costs */}
+        <motion.h2
+          className="text-3xl font-semibold text-blue-600 mt-12 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+        >
+          Costs of ISO Certificate Registration in Hyderabad
+        </motion.h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Costs vary based on business size, process complexity, ISO type, and certification body. Contact us for a tailored quote!
+        </p>
+      </div>
+    </div>
+  );
 }
