@@ -35,6 +35,7 @@ import StateFoodLicense from "./pages/StateFoodLicense";
 import CentralFoodLicense from "./pages/CentralFoodLicense";
 import Intro from "./pages/Intro";
 import WeboriumServices from "./components/WeboriumServices";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -51,12 +52,15 @@ function App() {
             <Route path="/registrations/company" element={<Registrations type="company" />} />
             <Route path="/registrations/government" element={<Registrations type="government" />} />
             <Route path="/our_profile/aboutuspage" element={<AboutUsPage />} />
+            
+            <Route path="/products/subscribe-save-product/" element={<AboutUsPage />} />
             <Route path="/our_profile/contact-us" element={<ContactForm />} />
+            <Route path="/contact-us/" element={<ContactForm />} />
             <Route path="/registrations/company/proprietorship-firm" element={<ProprietorshipPage />} />
             <Route path="/registrations/company/pvt-ltd-registration" element={<PVTLTDPage />} />
             <Route path="/registrations/company/partnership-firm" element={<PartnershipFirmRegistration />} />
             <Route path="/registrations/company/opc-registration" element={<OPCRegistration />} />
-            <Route path="/registrations/company/startup-registration" element={<StartupIndiaRegistration />} />
+            <Route path="/registrations/company/startup-india-registration" element={<StartupIndiaRegistration />} />
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
@@ -81,9 +85,10 @@ function App() {
             <Route path="gov/ghmc-trade-license" element={<GHMCRegistration />}/>
             <Route path="/gov/iso-registration" element={<ISORegistration />}/>
             <Route path="/gov/esi-registration" element={<ESIRegistration />}/>
-
+            <Route path="/home" element={<Intro />}/>
             <Route path="/" element={<Intro />}/>
             <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
+            <Route path="/services" element={<Services />}/>
             < Route path="*" element={<NotFound />} />
           </Routes>
         </main>

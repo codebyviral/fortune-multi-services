@@ -411,27 +411,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Fortune Multi Services. All rights reserved.</p>
           <div className="flex justify-center space-x-6 mt-4">
             <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors hover:underline"
-              whileHover={{ scale: 1.05 }}
-            >
-              Privacy Policy
-            </motion.a>
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors hover:underline"
-              whileHover={{ scale: 1.05 }}
-            >
-              Terms of Service
-            </motion.a>
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors hover:underline"
-              whileHover={{ scale: 1.05 }}
-            >
-              Contact Us
-            </motion.a>
-            <motion.a 
               href="https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8" 
               className="hover:text-white transition-colors hover:underline"
               whileHover={{ scale: 1.05 }}
@@ -444,10 +423,10 @@ const Footer = () => {
 {/* Floating Call Button */}
 <div className="fixed bottom-8 right-8 z-50">
   <div className="relative group">
-    {/* Main Connect Button */}
+    {/* Main Connect Button - Now with your logo */}
     <motion.button
-      className="bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 text-white rounded-full p-5 flex items-center justify-center shadow-2xl hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 ease-in-out"
-      whileHover={{ scale: 1.6, rotate: 90 }}
+      className="bg-white-to-br from-white-500 via-blue-600 to-indigo-700 text-black rounded-full p-3 flex items-center justify-center shadow-3xl hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-100 ease-in-out"
+      whileHover={{ scale: 1.6, rotate: 0 }}
       whileTap={{ scale: 0.9 }}
       onClick={(e) => {
         if (window.innerWidth < 768) {
@@ -457,9 +436,12 @@ const Footer = () => {
         }
       }}
     >
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
-      </svg>
+      {/* Replace this with your logo */}
+      <img 
+        src="/FMS1.png" 
+        alt="Company Logo"
+        className="h-12 w-12 object-contain"
+      />
     </motion.button>
 
     {/* Sub Buttons Container */}
@@ -507,7 +489,8 @@ const Footer = () => {
       </motion.a>
     </div>
   </div>
-</div>    </footer>
+</div>
+</footer>
   );
 };
 

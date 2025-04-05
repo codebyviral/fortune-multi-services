@@ -73,7 +73,7 @@ const Header = () => {
             "PVT LTD Registration",
             "OPC Registration",
             "LLP Registration",
-            "Startup Registration",
+            "Startup India Registration",
             "Society Registration",
             "Udyam Registration",
           ],

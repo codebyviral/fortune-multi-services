@@ -14,10 +14,10 @@ const FSSAILicense = () => {
         <div className="relative z-10 py-16 px-6 sm:py-24 sm:px-12 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-              FSSAI License Registration in <span className="text-yellow-300"></span>
+              FSSAI License Registration <span className="text-yellow-300"></span>
             </h1>
             <p className="text-xl md:text-2xl font-light mb-6">
-              Complete compliance solution for food businesses in Telangana
+              Complete compliance solution for food businesses
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
