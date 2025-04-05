@@ -28,12 +28,7 @@ const TrademarkRenewal = () => {
             maintaining exclusive rights and safeguarding against infringement. 
             Don't let your brand's protection lapse - renew with confidence.
           </p>
-          <button
-      className="mt-4 px-8 py-3 bg-gradient-to-r from-green-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
-      onClick={() => navigate("/our_profile/contact-us")}
-    >
-      Contact Us for Renewal Assistance
-    </button>
+       
         </div>
       </div>
 

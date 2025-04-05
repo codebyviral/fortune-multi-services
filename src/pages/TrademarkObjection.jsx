@@ -20,9 +20,6 @@ const TrademarkObjection = () => {
           This comprehensive guide provides insights into the reasons for trademark objection, 
           the objection process, and essential steps to protect your brand's identity.
         </p>
-        <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
-          Get Objection Assistance
-        </button>
       </div>
 
       {/* Introduction */}

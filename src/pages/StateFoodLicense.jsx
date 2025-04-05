@@ -139,9 +139,6 @@ const StateFoodLicense = () => {
             <FaPhoneAlt />
             <span>Call Now: +91 8919051513</span>
           </button>
-          <button className="bg-transparent border-2 border-white hover:bg-blue-800 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
-            Get Free Consultation
-          </button>
         </div>
       </section>
     </div>
