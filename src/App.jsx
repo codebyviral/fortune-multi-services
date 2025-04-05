@@ -47,7 +47,6 @@ function App() {
         {/* Main content area */}
         <main className="container mx-auto px-4 py-8">
           <Routes>
-         
             <Route path="/registrations" element={<Registrations />} />
             <Route path="/registrations/company" element={<Registrations type="company" />} />
             <Route path="/registrations/government" element={<Registrations type="government" />} />
@@ -80,16 +79,20 @@ function App() {
             <Route path="/trademark/services/trademark-opposition" element={<TrademarkOpposition />}/>
             <Route path="/trademark/services/trademark-objection" element={<TrademarkObjection />}/>
             <Route path="/food-license/fssai/food-license-registration" element={<FSSAILicense />}/>
+            <Route path="/products/product-multiple-subscription-options/" element={<FSSAILicense />}/>
             <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
             <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
+            <Route path="/products/simple-physical-product/" element={<CentralFoodLicense />}/>
             <Route path="gov/ghmc-trade-license" element={<GHMCRegistration />}/>
             <Route path="/gov/iso-registration" element={<ISORegistration />}/>
             <Route path="/gov/esi-registration" element={<ESIRegistration />}/>
             <Route path="/home" element={<Intro />}/>
             <Route path="/" element={<Intro />}/>
             <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
+            <Route path="/shop/" element={<WeboriumServices />}/>
             <Route path="/services" element={<Services />}/>
             < Route path="*" element={<NotFound />} />
+            <Route path="/products/simple-digital-product/" element={<Services />}/>
           </Routes>
         </main>
       </div>
