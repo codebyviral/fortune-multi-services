@@ -54,7 +54,7 @@ const Header = () => {
       path: "/",
       submenus: [
         {
-          title: "SERVICES",
+          title: "Services",
           path: "/Services",
           items: ["PASSPORT"],
         },
@@ -66,7 +66,7 @@ const Header = () => {
       path: "#",
       submenus: [
         {
-          title: "WEBORIUM",
+          title: "Weborium",
           path: "/WEBORIUM",
           items: ["WEBORIUM"],
         },
