@@ -56,7 +56,7 @@ const Header = () => {
         {
           title: "Services",
           path: "/Services",
-          items: ["PASSPORT"],
+          items: ["Passport"],
         },
         
       ],
@@ -68,7 +68,7 @@ const Header = () => {
         {
           title: "Weborium",
           path: "/WEBORIUM",
-          items: ["WEBORIUM"],
+          items: ["Weborium"],
         },
       ],
     },
