@@ -12,7 +12,6 @@ const Intro = () => {
     return (
       <div className="min-h-screen">
 
-
 <Helmet>
   <title>Fortune Multi Services | Business, Financial & Digital Solutions</title>
   <meta
@@ -46,8 +45,11 @@ const Intro = () => {
   <link rel="canonical" href="https://fortunemultiservices.in/" />
 </Helmet>
 
+
         <br/>
         <br/>
+
+
         <Hero />
         <Services />
         

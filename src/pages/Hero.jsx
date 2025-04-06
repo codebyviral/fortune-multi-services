@@ -51,7 +51,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
           <button 
-  className="bg-brand-blue hover:bg-blue-800 text-black flex items-center gap-2 px-6 py-3 rounded-md font-medium"
+  className="bg-brand-green bg-blue-600 text-white flex items-center gap-2 px-6 py-3 rounded-md font-medium"
   onClick={() => window.location.href = '/our_profile/contact-us'}
 >
   Get Started <ArrowRight size={16} />
