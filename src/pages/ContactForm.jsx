@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -76,6 +77,40 @@ const ContactForm = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Contact Information */}
+
+<Helmet>
+  <title>Contact Us | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Get in touch with Fortune Multi Services for expert guidance on business registration, taxation, licensing, and more. We're here to help you grow."
+  />
+  <meta
+    name="keywords"
+    content="contact Fortune Multi Services, get in touch, business support, consultation, service inquiry, registration help, GST support, FSSAI help, legal support"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Get in Touch | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Reach out to Fortune Multi Services for fast and professional business solutions. We respond quickly to your needs."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/contact-us" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/contact-preview.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Talk to Our Experts | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Need help with business services? Contact us today to speak with an expert."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/contact-preview.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/contact-us" />
+</Helmet>
+
       <div className="bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">Registered office</h2>
         <h1 className="text-3xl font-bold text-blue-600 mb-8">FORTUNE MULTI SERVICES</h1>

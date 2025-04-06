@@ -2,6 +2,7 @@
 import React from 'react';
 import { Star, Percent, Shield, Users, FileText, Fish, Globe, DollarSign, Briefcase, Building2 } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const ComprehensiveServices = () => {
   const services = [
@@ -69,6 +70,42 @@ const ComprehensiveServices = () => {
 
   return (
     <section className="py-16 bg-white">
+
+
+
+<Helmet>
+  <title>Comprehensive Business & Government Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Explore a wide range of services offered by Fortune Multi Services, including business registration, tax filing, FSSAI licensing, trademark registration, and government documentation."
+  />
+  <meta
+    name="keywords"
+    content="business registration, government services, FSSAI license, GST registration, trademark registration, digital compliance, tax filing, multi services, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="All-in-One Business & Government Services | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get reliable and expert support for all your business and legal service needs. Trusted by startups, MSMEs, and enterprises."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/services" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/services-preview.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Professional Business & Legal Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="From registrations to renewals, Fortune Multi Services handles it all. One-stop solution for businesses across India."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/services-preview.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/services" />
+</Helmet>
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">

@@ -36,11 +36,36 @@ import CentralFoodLicense from "./pages/CentralFoodLicense";
 import Intro from "./pages/Intro";
 import WeboriumServices from "./components/WeboriumServices";
 import Services from "./pages/Services";
-
+import { Helmet } from "react-helmet";
 function App() {
   return (
     <Router>
+      
       <div className="min-h-screen bg-gray-50">
+
+      <Helmet>
+  <title>Fortune Multi Services | Business, Finance & Digital Experts</title>
+  <meta name="description" content="Fortune Multi Services offers expert solutions in company registration, GST filing, tax, legal services, and more." />
+  <meta name="keywords" content="Fortune Multi Services, company registration, GST, tax filing, legal services, digital services" />
+  <meta name="author" content="Fortune Multi Services" />
+
+  {/* Social Media Preview (Open Graph) */}
+  <meta property="og:title" content="Fortune Multi Services" />
+  <meta property="og:description" content="Trusted partner for all your business and digital service needs." />
+  <meta property="og:image" content="https://fortunemultiservices.in/preview-image.png" />
+  <meta property="og:url" content="https://fortunemultiservices.in/" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fortune Multi Services" />
+  <meta name="twitter:description" content="Comprehensive services for business registration, GST, tax, and compliance." />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/preview-image.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/" />
+</Helmet>
+
+
         <Header />
         <br/>
         <br/>

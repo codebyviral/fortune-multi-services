@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Check } from 'lucide-react';
-
+import { Helmet } from "react-helmet";
 const Features = () => {
   const features = [
     "Easy company registration process",
@@ -14,6 +14,40 @@ const Features = () => {
 
   return (
     <section className="py-16 bg-gray-50">
+
+<Helmet>
+  <title>Top Features of Our Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Discover the standout features that make Fortune Multi Services a trusted partner for your business needs, including fast service, expert support, and full compliance."
+  />
+  <meta
+    name="keywords"
+    content="business features, multi services features, fortune multi services, fast service, expert consultation, affordable business solutions, reliable support"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Why Choose Us | Fortune Multi Services Features" />
+  <meta
+    property="og:description"
+    content="Explore our service features—quick processing, professional guidance, government registration support, and transparent pricing."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/features" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/features-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Top Features | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Check out the key features that set Fortune Multi Services apart in business documentation and registration services."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/features-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/features" />
+</Helmet>
+
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">

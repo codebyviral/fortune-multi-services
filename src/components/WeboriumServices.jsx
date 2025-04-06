@@ -1,9 +1,36 @@
 import { FaGlobe, FaMobileAlt, FaShoppingCart, FaServer, FaChartLine, FaPhone, FaEnvelope, FaInstagram, FaCode, FaDatabase, FaCloud, FaShieldAlt, FaSync } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
+import Helmet from "react-helmet"
 const WeboriumServices = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+        <Helmet>
+        <title>Weborium Services | Fortune Multi Services</title>
+        <meta
+          name="description"
+          content="Explore Weborium Services by Fortune Multi Services – offering website development, SEO, digital marketing, and custom online solutions."
+        />
+        <meta
+          name="keywords"
+          content="Weborium Services, website development, SEO, digital marketing, Fortune Multi Services"
+        />
+        <meta name="author" content="Fortune Multi Services" />
+
+        {/* Open Graph for Social Media */}
+        <meta property="og:title" content="Weborium Services | Fortune Multi Services" />
+        <meta property="og:description" content="We provide expert website and digital services to grow your online presence." />
+        <meta property="og:image" content="https://fortunemultiservices.in/public/FMS.png" />
+        <meta property="og:url" content="https://fortunemultiservices.in/WEBORIUM/weborium" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Weborium Services | Fortune Multi Services" />
+        <meta name="twitter:description" content="Boost your business with our website design, SEO, and digital growth solutions." />
+        <meta name="twitter:image" content="https://fortunemultiservices.in/assets/preview-image.png" />
+
+        <link rel="canonical" href="https://fortunemultiservices.in/WEBORIUM/weborium" />
+      </Helmet>
       <br/>
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 px-4 sm:px-6 lg:px-8 text-center">

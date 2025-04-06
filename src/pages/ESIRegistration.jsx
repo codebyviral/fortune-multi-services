@@ -1,6 +1,40 @@
+import { Helmet } from "react-helmet";
 export default function ESIRegistration() {
     return (
         <div style={{ fontFamily: 'Arial, Helvetica, sans-serif', padding: '40px 30px', backgroundColor: '#f0f0f0', marginTop: '50px', borderRadius: '8px' }}>
+<Helmet>
+  <title>ESI Registration Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Get hassle-free ESI registration for your business with Fortune Multi Services. Ensure employee welfare and comply with statutory requirements today."
+  />
+  <meta
+    name="keywords"
+    content="ESI registration, Employees State Insurance, employee welfare scheme, ESI filing, Fortune Multi Services, business compliance, labor law registration"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Quick & Easy ESI Registration | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="We provide expert assistance for ESI registration and compliance. Secure your employee benefits legally and efficiently."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gov/esi-registration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/esi-registration-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ESI Registration Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Comprehensive and affordable ESI registration service for Indian businesses. Book your consultation today."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/esi-registration-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gov/esi-registration" />
+</Helmet>
+
             <h1 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px', paddingTop: '80px' }}>
             ESI Registration in Hyderabad
             </h1>
