@@ -87,7 +87,7 @@ const Header = () => {
             "LLP Registration",
             "Startup India Registration",
             "Society Registration",
-            "Udyam Registration",
+            "Udyam Registration(MSME)",
             "Labour License",
             "GHMC Trade License",
             "Municipal Trade License",

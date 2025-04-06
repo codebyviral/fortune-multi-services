@@ -113,7 +113,7 @@ function App() {
             <Route path="/registrations/company/partnership-firm" element={<PartnershipFirmRegistration />} />
             <Route path="/registrations/company/opc-registration" element={<OPCRegistration />} />
             <Route path="/registrations/company/startup-india-registration" element={<StartupIndiaRegistration />} />
-            <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
+            <Route path="/registrations/company/udyam-registration(msme)" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
             <Route path="/registrations/company/iec-code-registration" element={<IECCodeRegistration />} />
