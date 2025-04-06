@@ -1,7 +1,9 @@
 import React from "react";
 import gstImage from "/GSTM.jpg";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 const GSTModifications = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
 
 

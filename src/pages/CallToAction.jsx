@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowRight, Phone, ClipboardList } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const CallToAction = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <section className="relative py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
 

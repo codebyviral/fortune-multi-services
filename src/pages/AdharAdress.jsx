@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaIdCard, FaClock, FaQuestionCircle } from 'react-icons/fa';
-
+import { useEffect } from 'react';
 const AdharAddress = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="container mx-auto py-10">
         <br/>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import { useEffect } from "react";
 import { FaHome, FaArrowLeft, FaSearch, FaSadTear } from "react-icons/fa";
 
 export default function NotFound() {
@@ -28,7 +28,9 @@ export default function NotFound() {
     }
   };
 
+ useEffect(()=>{window.scrollTo(0,0)})
   return (
+    
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 flex flex-col items-center justify-center p-6">
       {/* Decorative elements */}
       <br />

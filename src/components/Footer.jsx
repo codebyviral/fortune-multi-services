@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaPhone, FaM
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
+import { useEffect } from 'react';
 const Footer = () => {
   const footerLinks = [
     {
@@ -96,7 +97,7 @@ const Footer = () => {
   const prevReview = () => {
     setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
   };
-
+ useEffect(()=>{window.scrollTo(0,0)})
   return (
     
     <footer className="bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white pt-20 pb-16 relative overflow-hidden">
@@ -193,8 +194,9 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-2 rounded-lg mr-3 shadow-lg">
-                <span className="text-xl font-bold">FMS</span>
+              <div className="bg-white-to-r from-white-500 to-white-600 text-white p-2 rounded-lg mr-3">
+              <img src="/FMS1.png" alt="FMS Logo" className="h-10 w-auto" />
+
               </div>
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                 FORTUNE MULTI SERVICES
@@ -292,21 +294,17 @@ const Footer = () => {
                 <div className="ml-3">
                   <h4 className="font-semibold">Kukatpally Office</h4>
                   <p className="text-gray-300 text-sm">
-                    Office No 2, 2nd Floor, opp Metro Pillar No 875, Moosapet, Kukatpally, Hyderabad - 500018.
+                  Office No 2, 2nd Floor, opp Metro Pillar No 875,
+Moosapet, Kukatpally,
+Hyderabad – 500018.
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0 mt-1">
-                  <FaMapMarkerAlt className="text-white text-xs" />
-                </div>
-                <div className="ml-3">
-                  <h4 className="font-semibold">Madhapur Office</h4>
-                  <p className="text-gray-300 text-sm">
-                    Plot No. 45, 3rd Floor, Hitech City Road, Madhapur, Hyderabad - 500081.
-                  </p>
-                </div>
+              
+                  
+                
               </div>
             </motion.div>
           </div>
@@ -441,9 +439,9 @@ const Footer = () => {
     >
       {/* Replace this with your logo */}
       <img 
-        src="/FMS1.png" 
+        src="/images.png" 
         alt="Company Logo"
-        className="h-12 w-12 object-contain"
+        className="h-15 w-15 object-contain"
       />
     </motion.button>
 
@@ -477,7 +475,7 @@ const Footer = () => {
 
       {/* Location Button */}
       <motion.a
-        href="https://maps.app.goo.gl/S7vzwvP21XpckDAU9?g_st=ic"
+        href="https://maps.app.goo.gl/cj5ynBGQGSeejTa79?g_st=awb"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-full p-4 flex items-center justify-center shadow-lg hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-200"

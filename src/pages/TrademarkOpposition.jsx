@@ -1,6 +1,8 @@
 import React from "react";
 import ContactForm from "./ContactForm"
+import { useEffect } from "react";
 const TrademarkOpposition = () => {
+   useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Hero Section */}

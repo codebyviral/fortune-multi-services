@@ -2,8 +2,9 @@ import React from "react";
 import { FaShieldAlt, FaGlobe, FaUserShield, FaChartLine, FaFileAlt, FaBuilding, FaClipboardList, FaSearch, FaFileUpload, FaCheckCircle } from "react-icons/fa";
 import { MdOutlineFoodBank, MdGppGood } from "react-icons/md";
 import { Helmet } from "react-helmet";
-
+import { useEffect } from "react";
 const CentralFoodLicense = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <Helmet>

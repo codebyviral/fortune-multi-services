@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const IncomeTaxAudit = () => {
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center w-full">
      

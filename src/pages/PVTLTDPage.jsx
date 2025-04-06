@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ContactForm from './ContactForm';
+import { useEffect } from 'react';
 const PvtLtdRegistrationPage = () => {
   // State for form fields
   const [formData, setFormData] = useState({
@@ -72,7 +73,7 @@ const PvtLtdRegistrationPage = () => {
       });
     }
   };
-
+ useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-6xl mx-auto p-6 bg-gray-50">
       <br />

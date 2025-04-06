@@ -1,7 +1,9 @@
 import { FaGlobe, FaMobileAlt, FaShoppingCart, FaServer, FaChartLine, FaPhone, FaEnvelope, FaInstagram, FaCode, FaDatabase, FaCloud, FaShieldAlt, FaSync } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Helmet from "react-helmet"
+import { useEffect } from 'react';
 const WeboriumServices = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="min-h-screen bg-gray-50">
         <Helmet>

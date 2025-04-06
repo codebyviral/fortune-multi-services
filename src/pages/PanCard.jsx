@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaIdCard, FaRupeeSign, FaClock, FaQuestionCircle, FaFileDownload } from 'react-icons/fa';
-
+import { useEffect } from 'react';
 const PanCard = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="container mx-auto py-10">
         <br/>

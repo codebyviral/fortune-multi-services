@@ -14,8 +14,10 @@ import {
 } from "lucide-react"
 import React from "react"
 import Helmet from "react-helmet"
+import { useEffect } from "react"
 
 export default function AboutUsPage() {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="flex flex-col min-h-screen">
             <Helmet>

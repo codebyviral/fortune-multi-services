@@ -1,7 +1,8 @@
 import React from 'react';
 import { Info, CheckCircle, FileText, AlertCircle, Calendar, User, HelpCircle } from 'lucide-react';
-
+import { useEffect } from 'react';
 const PFRegistrationPage = () => {
+   useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white">
         <br>

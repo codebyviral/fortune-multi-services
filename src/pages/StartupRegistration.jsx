@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 export default function StartupIndiaRegistration() {
+   useEffect(()=>{window.scrollTo(0,0)})
     return (
       <div style={{ fontFamily: 'Arial, sans-serif', margin: '0 auto', maxWidth: '1200px', padding: '20px' }}>
   <br />

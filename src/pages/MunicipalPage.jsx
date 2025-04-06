@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useEffect } from 'react';
 const MunicipalTradeLicensePage = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <br/>

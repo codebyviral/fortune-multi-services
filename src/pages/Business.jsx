@@ -6,7 +6,9 @@ import PartnershipFirm from "./PartnershipFirm";
 import OPCRegistration from "./OPCRegistration";
 import StartupRegistration from "./StartupRegistration";
 import IECCodeRegistration from "./IECCodeRegistration"
+import { useEffect } from "react";
 const Business = () => {
+    useEffect(()=>{window.scrollTo(0,0)})
     return (
       <div className="min-h-screen">
 

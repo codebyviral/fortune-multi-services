@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 export default function ESIRegistration() {
+    useEffect(()=>{window.scrollTo(0,0)})
     return (
         <div style={{ fontFamily: 'Arial, Helvetica, sans-serif', padding: '40px 30px', backgroundColor: '#f0f0f0', marginTop: '50px', borderRadius: '8px' }}>
 <Helmet>

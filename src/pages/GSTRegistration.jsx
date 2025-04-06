@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 const GSTRegistration = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <main className="min-h-screen bg-gray-100 py-16 px-5 md:px-20">
 

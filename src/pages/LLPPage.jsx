@@ -1,7 +1,8 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Book, FileText, Briefcase, AlertTriangle, Clock, DollarSign } from 'lucide-react';
-
+import { useEffect } from 'react';
 const LLPRegistrationGuide = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 bg-gradient-to-br from-blue-50 to-indigo-50">
       {/* Hero Section */}

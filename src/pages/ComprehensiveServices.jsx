@@ -2,7 +2,7 @@ import React from 'react';
 import { Star, Percent, Shield, Users, FileText, Fish, Globe, DollarSign, Briefcase, Building2, ArrowRight } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-
+import { useEffect } from 'react';
 const ComprehensiveServices = () => {
   const services = [
     {
@@ -76,7 +76,7 @@ const ComprehensiveServices = () => {
       path: '/msme-registration',
     },
   ];
-
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <section className="py-16 bg-white">
       <Helmet>
