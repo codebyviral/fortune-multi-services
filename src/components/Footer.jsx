@@ -414,7 +414,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Fortune Multi Services. All rights reserved.</p>
           <div className="flex justify-center space-x-6 mt-4">
             <motion.a 
-              href="https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8" 
+              href="https://maps.app.goo.gl/S7vzwvP21XpckDAU9?g_st=ic" 
               className="hover:text-white transition-colors hover:underline"
               whileHover={{ scale: 1.05 }}
             >
@@ -477,7 +477,7 @@ const Footer = () => {
 
       {/* Location Button */}
       <motion.a
-        href="https://maps.app.goo.gl/SVkNs1iKHdynZ6Vd8"
+        href="https://maps.app.goo.gl/S7vzwvP21XpckDAU9?g_st=ic"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-full p-4 flex items-center justify-center shadow-lg hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-200"
