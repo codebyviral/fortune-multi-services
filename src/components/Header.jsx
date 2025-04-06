@@ -50,17 +50,17 @@ const Header = () => {
         
       ],
     },
-    {
-      title: "WEB SERVICES",
-      path: "#",
-      submenus: [
-        {
-          title: "WEBORIUM",
-          path: "/WEBORIUM",
-          items: ["WEBORIUM"],
-        },
-      ],
-    },
+    // {
+    //   title: "WEB SERVICES",
+    //   path: "#",
+    //   submenus: [
+    //     {
+    //       title: "WEBORIUM",
+    //       path: "/WEBORIUM",
+    //       items: ["WEBORIUM"],
+    //     },
+    //   ],
+    // },
     {
       title: "REGISTRATIONS",
       path: "#",

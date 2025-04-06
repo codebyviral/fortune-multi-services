@@ -113,7 +113,7 @@ function App() {
             <Route path="/gov/esi-registration" element={<ESIRegistration />}/>
             <Route path="/home" element={<Intro />}/>
             <Route path="/" element={<Intro />}/>
-            <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
+            {/* <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/> */}
             <Route path="/shop/" element={<WeboriumServices />}/>
             <Route path="/services" element={<Services />}/>
             < Route path="*" element={<NotFound />} />
