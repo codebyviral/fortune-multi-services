@@ -1,6 +1,7 @@
 import React from 'react';
 import { Percent, Building2, Calendar, Fish } from 'lucide-react';
 import Helmet from "react-helmet"
+import { useEffect } from 'react';
 const BusinessDocumentation = () => {
   const services = [
     {
@@ -32,7 +33,7 @@ const BusinessDocumentation = () => {
       hoverColor: "hover:bg-blue-50"
     }
   ];
-
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
        <Helmet>

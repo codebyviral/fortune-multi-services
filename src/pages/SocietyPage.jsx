@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-
+import { useEffect } from 'react';
 const SocietyRegistrationPage = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
@@ -11,7 +11,7 @@ const SocietyRegistrationPage = () => {
       setExpandedSection(sectionId);
     }
   };
-
+ useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-yellow-50 to-rose-50">
       {/* Header */}

@@ -2,8 +2,9 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import { FileText, Building2, Receipt, Headphones, Rocket, Shield, PieChart, Users } from 'lucide-react';
 import { Helmet } from "react-helmet";
-
+import { useEffect } from 'react';
 const Services = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <section id="services" className="py-20 bg-gray-50">
 <Helmet>

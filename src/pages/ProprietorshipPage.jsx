@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaCheck, FaLightbulb, FaShieldAlt, FaChartLine, FaHandshake, FaFileAlt, FaUserTie, FaStore, FaGlobe, FaBalanceScale } from 'react-icons/fa';
-
+import { useEffect } from 'react';
 const ProprietorshipPage = () => {
+   useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="bg-gray-50 min-h-screen">
       <br/>

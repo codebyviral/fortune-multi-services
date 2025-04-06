@@ -1,4 +1,3 @@
-  // pages/Registrations.jsx
   export default function Registrations({ type }) {
     return (
       <div className="py-12">

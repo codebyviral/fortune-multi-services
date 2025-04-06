@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Helmet } from "react-helmet";
-
+import { useEffect } from 'react';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     mobileNo: '',
@@ -73,7 +73,7 @@ const ContactForm = () => {
     }
     setIsSubmitting(false);
   };
-
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Contact Information */}

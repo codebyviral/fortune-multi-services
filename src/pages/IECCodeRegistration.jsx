@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const IECCodeRegistration = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="w-full max-w-4xl mx-auto p-6 bg-gradient-to-b from-indigo-50 to-white">
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const LabourLicensePage = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
 

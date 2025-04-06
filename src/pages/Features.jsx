@@ -2,6 +2,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const Features = () => {
   const features = [
     "Easy company registration process",

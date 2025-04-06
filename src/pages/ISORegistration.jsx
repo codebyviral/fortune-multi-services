@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 export default function ISORegistration() {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 py-16 px-6 md:px-12 lg:px-24 font-sans">
 

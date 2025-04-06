@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useEffect } from 'react';
 export default function UdyamRegistration() {
+     useEffect(()=>{window.scrollTo(0,0)})
     return (
         <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 font-sans">
             <br/>

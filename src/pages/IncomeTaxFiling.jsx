@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const IncomeTaxFiling = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   const navigate = useNavigate();
 
   return (

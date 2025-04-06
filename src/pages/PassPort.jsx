@@ -2,6 +2,7 @@ import React from 'react';
 import { FaIdCard, FaClock, FaQuestionCircle } from 'react-icons/fa';
 
 const PassPort = () => {
+  
   return (
     <div className="container mx-auto py-10">
         <br/>

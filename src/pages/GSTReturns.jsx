@@ -1,7 +1,9 @@
 import React from "react";
 import gstImage from "/GST.png";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 const GSTReturns = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="container mx-auto p-6">
       

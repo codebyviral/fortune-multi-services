@@ -50,13 +50,13 @@ const Header = () => {
       ],
     },
     {
-      title: "Services",
+      title: "SERVICES",
       path: "/",
       submenus: [
         {
-          title: "Services",
+          title: "SERVICES",
           path: "/Services",
-          items: [" PAN CARD "," ADHAR CARD UPDATE ","PASSPORT"],
+          items: ["PASSPORT"],
         },
         
       ],

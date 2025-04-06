@@ -1,8 +1,9 @@
 import React from "react";
 import { FaShieldAlt, FaChartLine, FaUsers, FaShoppingCart, FaFileSignature, FaRupeeSign, FaSearch, FaFileUpload, FaCreditCard, FaClipboardCheck } from "react-icons/fa";
 import { Helmet } from "react-helmet";
-
+import { useEffect } from "react";
 const FSSAILicense = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 <Helmet>

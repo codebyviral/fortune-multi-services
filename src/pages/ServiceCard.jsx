@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import { useEffect } from 'react';
 const ServiceCard = ({ 
   icon, 
   iconBg, 
@@ -8,6 +8,7 @@ const ServiceCard = ({
   description,
   className = '' 
 }) => {
+   useEffect(()=>{window.scrollTo(0,0)})
   return (
     <div className={`${className} group flex flex-col h-full border border-gray-100 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-100`}>
       <div className={`${iconBg} w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-opacity-90`}>

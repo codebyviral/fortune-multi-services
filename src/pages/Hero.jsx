@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import { useEffect } from 'react';
 const Hero = () => {
+  useEffect(()=>{window.scrollTo(0,0)})
   return (
     <section className="hero-gradient py-20 md:py-28">
       
