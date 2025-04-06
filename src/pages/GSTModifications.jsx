@@ -1,9 +1,46 @@
 import React from "react";
 import gstImage from "/GSTM.jpg";
-
+import { Helmet } from "react-helmet";
 const GSTModifications = () => {
   return (
+
+
+
     <div className="container mx-auto p-6">
+
+<Helmet>
+  <title>GST Modifications | Update GST Details Online - Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Easily update your GST registration details like address, business name, or authorized signatory with expert assistance from Fortune Multi Services."
+  />
+  <meta
+    name="keywords"
+    content="GST modifications, update GST details, change GST registration, GST amendment, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="GST Modifications | Update GST Details Online" />
+  <meta
+    property="og:description"
+    content="Modify your GST registration quickly and accurately. Fortune Multi Services offers expert guidance for address change, business name update, and more."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gst/services/gst-modifications" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/gst-modification-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GST Registration Modifications | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Looking to modify your GST registration? Get professional support to update business details in your GST profile smoothly."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/gst-modification-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gst/services/gst-modifications" />
+</Helmet>
+
       <br />
       <br />
       <br />

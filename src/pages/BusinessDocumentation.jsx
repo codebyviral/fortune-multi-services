@@ -1,6 +1,6 @@
 import React from 'react';
 import { Percent, Building2, Calendar, Fish } from 'lucide-react';
-
+import Helmet from "react-helmet"
 const BusinessDocumentation = () => {
   const services = [
     {
@@ -35,6 +35,34 @@ const BusinessDocumentation = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+       <Helmet>
+        <title>Business Documentation Services | Fortune Multi Services</title>
+        <meta
+          name="description"
+          content="Get expert assistance with all your business documentation needs – from company registration and compliance to tax and legal paperwork."
+        />
+        <meta
+          name="keywords"
+          content="business documentation, company registration, legal documents, startup paperwork, compliance, Fortune Multi Services"
+        />
+        <meta name="author" content="Fortune Multi Services" />
+
+        {/* Open Graph for Social Media */}
+        <meta property="og:title" content="Business Documentation | Fortune Multi Services" />
+        <meta property="og:description" content="Professional support for all your business documentation – reliable, fast, and compliant." />
+        <meta property="og:image" content="https://fortunemultiservices.in/assets/documentation-preview.png" />
+        <meta property="og:url" content="https://fortunemultiservices.in/services/business-documentation" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Business Documentation | Fortune Multi Services" />
+        <meta name="twitter:description" content="One-stop solution for company paperwork, legal filings, registrations, and document preparation." />
+        <meta name="twitter:image" content="https://fortunemultiservices.in/assets/documentation-preview.png" />
+
+        <link rel="canonical" href="https://fortunemultiservices.in/services/business-documentation" />
+      </Helmet>
+
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="lg:w-1/2">

@@ -1,6 +1,42 @@
+import { Helmet } from "react-helmet";
 export default function GHMCRegistration() {
     return (
         <div style={{ fontFamily: 'Arial, sans-serif', margin: '0 auto', maxWidth: '1200px', padding: '20px' }}>
+            import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>GHMC Trade License Registration | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Apply for GHMC trade license easily with Fortune Multi Services. Hassle-free documentation, expert support, and timely approvals for your business."
+  />
+  <meta
+    name="keywords"
+    content="GHMC trade license, trade license registration, Hyderabad municipal license, GHMC business license, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="GHMC Trade License Registration | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get your GHMC trade license fast and smooth. Expert guidance, documentation assistance, and end-to-end support."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gov/ghmc-trade-license" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/ghmc-license-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GHMC License Registration Online | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Register your GHMC trade license without hassle. Trusted by businesses in Hyderabad for smooth registration support."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/ghmc-license-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gov/ghmc-trade-license" />
+</Helmet>
+
             {/* GHMC Registration Section */}
             <h1 style={{ fontSize: '2em', color: '#2243b6', marginBottom: '20px',paddingTop: '150px' }}>
                 GHMC Registration in Hyderabad

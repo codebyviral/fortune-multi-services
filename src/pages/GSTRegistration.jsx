@@ -1,8 +1,43 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 const GSTRegistration = () => {
   return (
     <main className="min-h-screen bg-gray-100 py-16 px-5 md:px-20">
+
+
+<Helmet>
+  <title>GST Registration Online | Register Your Business for GST - Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Register your business for GST quickly and hassle-free with Fortune Multi Services. Get expert assistance and complete documentation support for GST registration."
+  />
+  <meta
+    name="keywords"
+    content="GST registration, online GST registration, GST registration services, register for GST, GST consultant, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="GST Registration Online | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get your GST registration done professionally with our expert team. Fast processing, full documentation support, and reliable service."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gst/services/gst-registration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/gst-registration-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Online GST Registration Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Apply for GST registration online with expert help. Fast, affordable, and fully compliant service for all types of businesses."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/gst-registration-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gst/services/gst-registration" />
+</Helmet>
+
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-blue-700 text-center mb-6">
           GST Registration

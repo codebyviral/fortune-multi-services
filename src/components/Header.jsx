@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { ChevronDown, Menu, X, Phone, Mail, Youtube, FileText, Calendar, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
+import Helmet from "react-helmet"
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null)
@@ -155,6 +156,33 @@ const Header = () => {
     <header
       className={`w-full fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${scrolled ? "shadow-lg" : ""}`}
     >
+            <Helmet>
+        <title>Fortune Multi Services | One-Stop Business & Digital Solutions</title>
+        <meta
+          name="description"
+          content="Welcome to Fortune Multi Services – your trusted partner for company registration, tax filing, digital services, and more across India."
+        />
+        <meta
+          name="keywords"
+          content="Fortune Multi Services, business registration, GST, tax filing, digital marketing, FSSAI, ISO, trademark"
+        />
+        <meta name="author" content="Fortune Multi Services" />
+
+        {/* Open Graph for Social Media */}
+        <meta property="og:title" content="Fortune Multi Services | Business & Digital Solutions" />
+        <meta property="og:description" content="Start and grow your business with Fortune Multi Services – registration, tax, legal & digital help in one place." />
+        <meta property="og:image" content="https://fortunemultiservices.in/assets/home-preview.png" />
+        <meta property="og:url" content="https://fortunemultiservices.in/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fortune Multi Services" />
+        <meta name="twitter:description" content="We offer business registration, legal, financial, and digital services under one roof." />
+        <meta name="twitter:image" content="https://fortunemultiservices.in/assets/home-preview.png" />
+
+        <link rel="canonical" href="https://fortunemultiservices.in/" />
+      </Helmet>
       {/* Top Header Bar */}
       <div className="bg-gradient-to-r from-indigo-900 via-blue-800 to-blue-700 text-white py-2 px-3 md:px-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">

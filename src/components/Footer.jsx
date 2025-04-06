@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaPhone, FaMapMarkerAlt, FaChevronLeft, FaChevronRight, FaGoogle, FaStar, FaRegEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet'
 const Footer = () => {
   const footerLinks = [
     {
@@ -97,8 +98,10 @@ const Footer = () => {
   };
 
   return (
+    
     <footer className="bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white pt-20 pb-16 relative overflow-hidden">
       {/* Animated background elements */}
+      
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
         <motion.div 
           className="absolute top-20 left-10 w-32 h-32 rounded-full bg-blue-500 blur-3xl"

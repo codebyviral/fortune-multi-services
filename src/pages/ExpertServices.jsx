@@ -1,6 +1,6 @@
 import React from 'react';
 import { Building, Receipt, FileText, Rocket, CheckSquare, Copyright, ArrowRight } from 'lucide-react';
-
+import { Helmet } from "react-helmet";
 const ExpertServices = () => {
   const expertServices = [
     {
@@ -43,6 +43,39 @@ const ExpertServices = () => {
 
   return (
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+<Helmet>
+  <title>Expert Business Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Leverage the expertise of Fortune Multi Services for legal, financial, digital, and documentation services tailored to your business needs."
+  />
+  <meta
+    name="keywords"
+    content="expert business services, professional consultants, Fortune Multi Services, legal compliance, startup guidance, business registration, financial advisory"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Expert Services for Business Growth | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get personalized support from industry experts to grow and legalize your business. Book a free consultation now."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/expert-services" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/expert-services-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Business Experts at Your Service | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Trusted advisors for your startup and business compliance needs. Fast, affordable, and reliable service."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/expert-services-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/expert-services" />
+</Helmet>
+
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

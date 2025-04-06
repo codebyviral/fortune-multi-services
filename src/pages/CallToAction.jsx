@@ -1,9 +1,30 @@
 import React from 'react';
 import { ArrowRight, Phone, ClipboardList } from 'lucide-react';
-
+import { Helmet } from "react-helmet";
 const CallToAction = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
+
+<Helmet>
+  <meta name="description" content="Take the next step with Fortune Multi Services – expert help in business registration, tax filings, and compliance. Contact us now!" />
+  <meta name="keywords" content="business support, contact us, register business, file taxes, compliance help, Fortune Multi Services" />
+
+  {/* Open Graph (Social Preview) */}
+  <meta property="og:title" content="Get Expert Help with Your Business Needs | Fortune Multi Services" />
+  <meta property="og:description" content="Schedule a consultation or get in touch with our team to handle your business documentation and registration smoothly." />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/contact-preview.png" />
+  <meta property="og:url" content="https://fortunemultiservices.in/contact-us" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Talk to Experts | Fortune Multi Services" />
+  <meta name="twitter:description" content="Get reliable business support from experts. Contact us today for quick and professional services." />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/contact-preview.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/contact-us" />
+</Helmet>
+
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <div className="absolute top-1/4 -left-20 w-80 h-80 rounded-full bg-white blur-3xl"></div>

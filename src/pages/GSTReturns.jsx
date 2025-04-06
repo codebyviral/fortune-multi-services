@@ -1,9 +1,44 @@
 import React from "react";
 import gstImage from "/GST.png";
-
+import { Helmet } from "react-helmet";
 const GSTReturns = () => {
   return (
     <div className="container mx-auto p-6">
+      
+
+<Helmet>
+  <title>GST Return Filing Services | File GST Returns Online - Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Simplify GST return filing with Fortune Multi Services. Get expert support to file GSTR-1, GSTR-3B, and other returns accurately and on time."
+  />
+  <meta
+    name="keywords"
+    content="GST return filing, file GST returns online, GSTR-1, GSTR-3B, GST consultant, GST compliance, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="GST Returns Filing | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Ensure timely and accurate GST return filing with our professional services. We handle GSTR-1, GSTR-3B, and other returns for your business."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gst/services/gst-return-filing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/gst-returns-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Online GST Return Filing | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="File your GST returns online with expert help. Reliable and timely return filing for businesses of all sizes."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/gst-returns-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gst/services/gst-return-filing" />
+</Helmet>
+
       <br />
       <br />
       <br />

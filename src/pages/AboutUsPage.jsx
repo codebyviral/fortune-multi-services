@@ -13,10 +13,38 @@ import {
   FileSpreadsheet,
 } from "lucide-react"
 import React from "react"
+import Helmet from "react-helmet"
 
 export default function AboutUsPage() {
   return (
     <div className="flex flex-col min-h-screen">
+            <Helmet>
+        <title>About Us | Fortune Multi Services</title>
+        <meta
+          name="description"
+          content="Learn more about Fortune Multi Services – our mission, vision, and how we help businesses with registrations, compliance, and digital solutions."
+        />
+        <meta
+          name="keywords"
+          content="About Fortune Multi Services, our team, business consultancy, registration experts, digital solutions, legal services"
+        />
+        <meta name="author" content="Fortune Multi Services" />
+
+        {/* Open Graph for Social Media */}
+        <meta property="og:title" content="About Us | Fortune Multi Services" />
+        <meta property="og:description" content="Know more about our team, services, and journey at Fortune Multi Services – your business growth partner." />
+        <meta property="og:image" content="https://fortunemultiservices.in/assets/about-preview.png" />
+        <meta property="og:url" content="https://fortunemultiservices.in/our_profile/aboutuspage" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Fortune Multi Services" />
+        <meta name="twitter:description" content="Discover how Fortune Multi Services empowers startups and businesses across India with expert solutions." />
+        <meta name="twitter:image" content="https://fortunemultiservices.in/assets/about-preview.png" />
+
+        <link rel="canonical" href="https://fortunemultiservices.in/our_profile/aboutuspage" />
+      </Helmet>
       <br />
       <br />
       <br />

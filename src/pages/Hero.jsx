@@ -1,9 +1,44 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import { Helmet } from "react-helmet";
 const Hero = () => {
   return (
     <section className="hero-gradient py-20 md:py-28">
+      
+
+<Helmet>
+  <title>Fortune Multi Services | Business, Legal & Digital Solutions</title>
+  <meta
+    name="description"
+    content="Empowering your business with expert legal, financial, and digital services. Get everything you need in one place — Fortune Multi Services."
+  />
+  <meta
+    name="keywords"
+    content="business services, legal documentation, financial consulting, digital solutions, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Fortune Multi Services | Your Growth Partner" />
+  <meta
+    property="og:description"
+    content="From company registration to GST filing and digital solutions, Fortune Multi Services covers all your business needs."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/hero-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="All-in-One Business Solutions | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Explore powerful services to launch and grow your business — company registration, tax filing, branding, and more."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/hero-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/" />
+</Helmet>
+
       <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h3 className="text-gray-600 text-xl mb-2">Save time. Save money.</h3>

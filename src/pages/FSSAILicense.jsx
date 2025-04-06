@@ -1,9 +1,43 @@
 import React from "react";
 import { FaShieldAlt, FaChartLine, FaUsers, FaShoppingCart, FaFileSignature, FaRupeeSign, FaSearch, FaFileUpload, FaCreditCard, FaClipboardCheck } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const FSSAILicense = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<Helmet>
+  <title>FSSAI Food License Registration | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Apply for your FSSAI food license hassle-free with Fortune Multi Services. Fast registration, expert guidance, and complete documentation support."
+  />
+  <meta
+    name="keywords"
+    content="FSSAI license, food license registration, FSSAI registration online, food safety license, FSSAI consultancy, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="FSSAI License Registration Online | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get your FSSAI food license easily with our expert team. Ensure compliance and grow your food business legally."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/food-license/fssai/food-license-registration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/fssai-license-banner.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FSSAI Food License Online | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="We help you register your FSSAI food license with ease. Trusted by food businesses across India."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/fssai-license-banner.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/food-license/fssai/food-license-registration" />
+</Helmet>
+
         <br/>
         <br/>
         <br/>

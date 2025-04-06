@@ -1,10 +1,44 @@
 import React from "react";
 import { FaShieldAlt, FaGlobe, FaUserShield, FaChartLine, FaFileAlt, FaBuilding, FaClipboardList, FaSearch, FaFileUpload, FaCheckCircle } from "react-icons/fa";
 import { MdOutlineFoodBank, MdGppGood } from "react-icons/md";
+import { Helmet } from "react-helmet";
 
 const CentralFoodLicense = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<Helmet>
+  <title>Central FSSAI Food License Registration | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Apply for Central FSSAI Food License with Fortune Multi Services. Get hassle-free registration, expert guidance, and timely approvals for food businesses operating in multiple states."
+  />
+  <meta
+    name="keywords"
+    content="Central FSSAI License, Central Food License, Food License Registration, FSSAI Consultant, FSSAI License for Export, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Central Food License Registration | FSSAI Compliance Made Easy" />
+  <meta
+    property="og:description"
+    content="Get your Central FSSAI Food License quickly with Fortune Multi Services. Perfect for businesses involved in large-scale food operations or export."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/food-license/fssai/food-central-license" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/central-food-license-preview.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Central FSSAI Food License Registration | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Get expert help with Central Food License registration. FSSAI-approved, fast, and trusted by food businesses nationwide."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/central-food-license-preview.png" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/food-license/fssai/food-central-license" />
+</Helmet>
+
       {/* Hero Section */}
       <br/>
       <br/>
