@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from "react"
 import { ChevronDown, Menu, X, Phone, Mail, Youtube, FileText, Calendar, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
@@ -50,17 +49,17 @@ const Header = () => {
         
       ],
     },
-    // {
-    //   title: "WEB SERVICES",
-    //   path: "#",
-    //   submenus: [
-    //     {
-    //       title: "WEBORIUM",
-    //       path: "/WEBORIUM",
-    //       items: ["WEBORIUM"],
-    //     },
-    //   ],
-    // },
+    {
+      title: "WEB SERVICES",
+      path: "#",
+      submenus: [
+        {
+          title: "WEBORIUM",
+          path: "/WEBORIUM",
+          items: ["WEBORIUM"],
+        },
+      ],
+    },
     {
       title: "REGISTRATIONS",
       path: "#",
@@ -77,12 +76,6 @@ const Header = () => {
             "Startup India Registration",
             "Society Registration",
             "Udyam Registration",
-          ],
-        },
-        {
-          title: "Govt Registrations",
-          path: "/gov",
-          items: [
             "Labour License",
             "GHMC Trade License",
             "Municipal Trade License",
@@ -270,8 +263,8 @@ const Header = () => {
 
             {/* Logo in mobile menu */}
             <div className="absolute top-6 left-6 md:hidden">
-              <span className="text-xl font-bold text-blue-800">Fortune Multi</span>
-              <span className="block text-sm text-blue-600">Services</span>
+              <span className="text-xl font-bold text-blue-800">Fortune </span>
+              <span className="block text-sm text-blue-600">Multi Services</span>
             </div>
 
             {menuItems.map((menu, index) => (
