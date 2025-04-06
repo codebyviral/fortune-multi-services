@@ -294,9 +294,7 @@ const Footer = () => {
                 <div className="ml-3">
                   <h4 className="font-semibold">Kukatpally Office</h4>
                   <p className="text-gray-300 text-sm">
-                  Office No 2, 2nd Floor, opp Metro Pillar No 875,
-Moosapet, Kukatpally,
-Hyderabad – 500018.
+                  Plot no 178&179, Flat No 303, Damarhu Construction, Mahadevpuram colony, Usha Mullapudi Rd, Kukatpally, Hyderabad, Telangana 500072
                   </p>
                 </div>
               </div>
