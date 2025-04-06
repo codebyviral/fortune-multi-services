@@ -56,7 +56,7 @@ const Header = () => {
         {
           title: "Services",
           path: "/Services",
-          items: ["PASSPORT"],
+          items: ["Passport"],
         },
         
       ],
@@ -68,7 +68,7 @@ const Header = () => {
         {
           title: "Weborium",
           path: "/WEBORIUM",
-          items: ["WEBORIUM"],
+          items: ["Weborium"],
         },
       ],
     },
@@ -87,7 +87,7 @@ const Header = () => {
             "LLP Registration",
             "Startup India Registration",
             "Society Registration",
-            "Udyam Registration(MSME)",
+            "Udyam (MSME) Registration",
             "Labour License",
             "GHMC Trade License",
             "Municipal Trade License",
