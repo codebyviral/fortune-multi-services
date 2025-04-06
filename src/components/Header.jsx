@@ -50,6 +50,18 @@ const Header = () => {
       ],
     },
     {
+      title: "Services",
+      path: "/",
+      submenus: [
+        {
+          title: "Services",
+          path: "/Services",
+          items: [" PAN CARD "," ADHAR CARD UPDATE ","PASSPORT"],
+        },
+        
+      ],
+    },
+    {
       title: "WEB SERVICES",
       path: "#",
       submenus: [
@@ -349,7 +361,7 @@ const Header = () => {
             {/* Mobile-only Book Now button */}
             <div className="mt-6 w-full md:hidden">
               <Link
-                to="/book"
+                to="/our_profile/contact-us"
                 className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-md font-medium w-full block text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

@@ -2,10 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutUsPage from "./pages/AboutUsPage";
+import Food from "./pages/Food"
 import ContactForm from "./pages/ContactForm";
+import IEC from "./pages/IEC";
 import Registrations from "./pages/Registration";
 import ProprietorshipPage from "./pages/ProprietorshipPage";
 import PVTLTDPage from "./pages/PVTLTDPage";
+import GSTPage from "./pages/GSTPage";
 import IECCodeRegistration from "./pages/IECCodeRegistration";
 import PartnershipFirmRegistration from "./pages/PartnershipFirm";
 import OPCRegistration from "./pages/OPCRegistration";
@@ -16,6 +19,7 @@ import LLPPage from "./pages/LLPPage";
 import MunicipalPage from "./pages/MunicipalPage";
 import SocietyPage from "./pages/SocietyPage";
 import PFRegistration from "./pages/PFRegistration";
+import Income from "./pages/Income"
 import LabourLicense from "./pages/LabourLicense";
 import GHMCRegistration from "./pages/GHMCRegistration";
 import ISORegistration from "./pages/ISORegistration";
@@ -36,6 +40,15 @@ import CentralFoodLicense from "./pages/CentralFoodLicense";
 import Intro from "./pages/Intro";
 import WeboriumServices from "./components/WeboriumServices";
 import Services from "./pages/Services";
+import PanCard from "./pages/PanCard";
+import AdharAddress from "./pages/AdharAdress";
+import PassPort from "./pages/PassPort";
+import Business from "./pages/Business";
+import Trade from "./pages/Trade"
+import LIC from "./pages/LIC";
+import MSME from "./pages/MSME";
+import TradeMark from "./pages/TradeMark";
+import Socity from "./pages/Socity"
 import { Helmet } from "react-helmet";
 function App() {
   return (
@@ -72,11 +85,24 @@ function App() {
         {/* Main content area */}
         <main className="container mx-auto px-4 py-8">
           <Routes>
+          <Route path="/msme-registration" element={<MSME/>} />
+          <Route path="/labour-license" element={<LIC />} />
+          <Route path="/income-tax-filing" element={<Income />} />
+          <Route path="/iec-registration" element={<IEC />} />
+          <Route path="/Services/passport" element={<PassPort />} />
+          <Route path="/food-registration" element={<Food />} />
+          <Route path="/trademark-registration" element={<TradeMark />} />
+          <Route path="/society-registration" element={<Socity />} />
+          <Route path="//trade-license" element={<Trade/>} />
+          <Route path="/business-registration" element={<Business />} />
+          <Route path="/gst-registration" element ={<GSTPage/>}/>
+          <Route path="/Services/xx" element={<Business />} />
+          <Route path="/Services/-adhar-card-update-" element={<AdharAddress />} />
             <Route path="/registrations" element={<Registrations />} />
             <Route path="/registrations/company" element={<Registrations type="company" />} />
             <Route path="/registrations/government" element={<Registrations type="government" />} />
             <Route path="/our_profile/aboutuspage" element={<AboutUsPage />} />
-            
+            <Route path="/Services/-pan-card-" element={<PanCard/>} />
             <Route path="/products/subscribe-save-product/" element={<AboutUsPage />} />
             <Route path="/our_profile/contact-us" element={<ContactForm />} />
             <Route path="/contact-us/" element={<ContactForm />} />
