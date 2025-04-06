@@ -241,7 +241,7 @@ const Header = () => {
     <img 
         src="/FMS-final.png" 
         alt="Fortune Multi Services Logo" 
-        className="h-13 w-auto transition-transform group-hover:scale-105"
+        className="h-14 w-auto transition-transform group-hover:scale-105"
     />
 </Link>
 

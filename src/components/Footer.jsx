@@ -198,9 +198,8 @@ const Footer = () => {
               <img src="/FMS-final.png" alt="FMS Logo" className="h-15 w-auto" />
 
               </div>
-              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                FORTUNE MULTI SERVICES
-              </h2>
+              <br/>
+            
             </motion.div>
             
             <motion.p 
@@ -210,6 +209,9 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
+               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                FORTUNE MULTI SERVICES
+              </h2>
               Fortune Multi Services is your trusted partner for business registrations and
               licenses. Our experts simplify the process, ensuring accuracy and peace of mind.
               From sole proprietorships to private limited companies, we've got you covered.

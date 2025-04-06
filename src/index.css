@@ -1,12 +1,12 @@
 /* styles/app.css */
 :root {
-  --primary-blue: #1E40AF;
-  --secondary-blue: #3B82F6;
+  --primary-blue: #002394;
+  --secondary-blue: #04255c;
   --accent-orange: #F97316;
-  --dark-blue: #1E3A8A;
-  --light-gray: #F9FAFB;
+  --dark-blue: #1e377a;
+  --light-gray: #d0e8ff;
   --white: #FFFFFF;
-  --text-gray: #6B7280;
+  --text-gray: #000000;
 }
 
 body {

@@ -113,7 +113,10 @@ const ContactForm = () => {
 
       <div className="bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">Registered office</h2>
-        <h1 className="text-3xl font-bold text-blue-600 mb-8">FORTUNE MULTI SERVICES</h1>
+        <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-800">
+                FORTUNE MULTI SERVICES
+              </h2>
+        <br/>
         
         <div className="space-y-6">
           <div className="flex items-start gap-4">
