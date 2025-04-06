@@ -195,7 +195,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="bg-white-to-r from-white-500 to-white-600 text-white p-2 rounded-lg mr-3">
-              <img src="/FMS1.png" alt="FMS Logo" className="h-10 w-auto" />
+              <img src="/FMS-final.png" alt="FMS Logo" className="h-15 w-auto" />
 
               </div>
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
@@ -294,9 +294,7 @@ const Footer = () => {
                 <div className="ml-3">
                   <h4 className="font-semibold">Kukatpally Office</h4>
                   <p className="text-gray-300 text-sm">
-                  Office No 2, 2nd Floor, opp Metro Pillar No 875,
-Moosapet, Kukatpally,
-Hyderabad – 500018.
+                  Plot no 178&179, Flat No 303, Damarhu Construction, Mahadevpuram colony, Usha Mullapudi Rd, Kukatpally, Hyderabad, Telangana 500072
                   </p>
                 </div>
               </div>
@@ -441,7 +439,7 @@ Hyderabad – 500018.
       <img 
         src="/images.png" 
         alt="Company Logo"
-        className="h-15 w-15 object-contain"
+        className="h-18 w-18 object-contain"
       />
     </motion.button>
 

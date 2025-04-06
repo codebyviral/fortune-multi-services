@@ -123,9 +123,9 @@ const ContactForm = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-1">Our Address</h3>
               <p className="text-gray-600">
-                Office No 2, 2nd Floor, opp Metro Pillar No 875,<br />
-                Moosapet, Kukatpally,<br />
-                Hyderabad – 500018.
+              Plot no 178&179, Flat No 303, Damarhu Construction,<br />
+              Mahadevpuram colony, Usha Mullapudi Rd,<br />
+              Kukatpally, Hyderabad, Telangana 500072
               </p>
             </div>
           </div>
