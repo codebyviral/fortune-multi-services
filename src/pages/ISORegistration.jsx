@@ -1,8 +1,43 @@
 import { motion } from 'framer-motion';
-
+import { Helmet } from "react-helmet";
 export default function ISORegistration() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 py-16 px-6 md:px-12 lg:px-24 font-sans">
+
+
+<Helmet>
+  <title>ISO Registration Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Get certified with Fortune Multi Services. We assist in ISO registration, documentation, and end-to-end certification services for businesses across India."
+  />
+  <meta
+    name="keywords"
+    content="ISO Registration, ISO Certification, ISO Consulting, ISO Services, Business Certification, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="ISO Registration Services | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Ensure quality standards with ISO certification. Expert ISO registration support from Fortune Multi Services."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gov/iso-registration" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/iso-registration-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ISO Registration Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Streamline your ISO certification process with our professional team. Trusted ISO registration services for all industries."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/iso-registration-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gov/iso-registration" />
+</Helmet>
+
       <div className="max-w-5xl mx-auto bg-white/90 shadow-2xl rounded-xl p-8 md:p-12 backdrop-blur-md">
         {/* Header */}
         <motion.h1

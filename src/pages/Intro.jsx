@@ -7,10 +7,45 @@ import Hero from "./Hero";
 import RegistrationProcess from "./RegistrationProcess";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
-
+import { Helmet } from "react-helmet";
 const Intro = () => {
     return (
       <div className="min-h-screen">
+
+
+<Helmet>
+  <title>Fortune Multi Services | Business, Financial & Digital Solutions</title>
+  <meta
+    name="description"
+    content="Welcome to Fortune Multi Services – your one-stop destination for business registration, tax filing, and digital consultancy services across India."
+  />
+  <meta
+    name="keywords"
+    content="Fortune Multi Services, Business Services, Company Registration, GST Filing, Tax Consultancy, Digital Solutions, Startup Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Fortune Multi Services | Business, Financial & Digital Solutions" />
+  <meta
+    property="og:description"
+    content="Explore multi-services for your business – company registration, tax filing, and digital solutions with expert support from Fortune Multi Services."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/fortune-home-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fortune Multi Services | Business, Financial & Digital Solutions" />
+  <meta
+    name="twitter:description"
+    content="Your trusted partner for all business services. Fast, reliable, and expert assistance at Fortune Multi Services."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/fortune-home-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/" />
+</Helmet>
+
         <br/>
         <br/>
         <Hero />

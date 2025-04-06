@@ -1,8 +1,42 @@
 import React from 'react';
-
+import { Helmet } from "react-helmet";
 const IECCodeRegistration = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6 bg-gradient-to-b from-indigo-50 to-white">
+
+<Helmet>
+  <title>IEC Code Registration | Import Export License India - Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Get your IEC (Import Export Code) registered quickly with Fortune Multi Services. Expert support, fast approval, and hassle-free documentation for your import-export business."
+  />
+  <meta
+    name="keywords"
+    content="IEC Code Registration, Import Export License, IEC Certificate, IEC Code Online, Import Export Business, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="IEC Code Registration | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Apply for your IEC code online through Fortune Multi Services. Seamless service, government compliance, and expert help for starting your import-export business."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gov/iec-code-registration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/iec-code-registration-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IEC Code Registration | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Fortune Multi Services offers a smooth, quick, and affordable IEC code registration process. Kickstart your import-export venture today."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/iec-code-registration-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gov/iec-code-registration" />
+</Helmet>
+
       <br/>
       <br/>
       <header className="mb-8 bg-gradient-to-r from-purple-600 to-indigo-600 p-6 rounded-lg shadow-lg">

@@ -1,11 +1,46 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Helmet } from "react-helmet";
 const IncomeTaxAudit = () => {
   const navigate = useNavigate();
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center w-full">
+     
+
+<Helmet>
+  <title>Income Tax Audit Services in India | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Ensure tax compliance with professional Income Tax Audit services by Fortune Multi Services. Expert CA support, accurate reporting, and timely filing guaranteed."
+  />
+  <meta
+    name="keywords"
+    content="Income Tax Audit, Tax Audit Services, Income Tax Compliance, Tax Filing, Chartered Accountant, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Income Tax Audit Services | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get expert help with your income tax audit and ensure your business stays compliant. Contact Fortune Multi Services for professional audit support."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/tax-compliances/services/income-tax-audit" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/income-tax-audit-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Income Tax Audit Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Professional tax audit services by experts. Ensure accuracy and avoid penalties with Fortune Multi Services."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/income-tax-audit-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/tax-compliances/services/income-tax-audit" />
+</Helmet>
+
       <br />
       <br />
       <br />

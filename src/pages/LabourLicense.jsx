@@ -1,8 +1,43 @@
 import React from 'react';
-
+import { Helmet } from "react-helmet";
 const LabourLicensePage = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
+
+
+<Helmet>
+  <title>Labour License Registration | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Register your labour license quickly and legally with Fortune Multi Services. Expert help for hassle-free labor law compliance and documentation."
+  />
+  <meta
+    name="keywords"
+    content="Labour License Registration, Labor Law Compliance, Contractor License, Labour Certificate, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Labour License Registration | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get your labour license approved with ease. Legal assistance, complete documentation, and fast processing by Fortune Multi Services."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/gov/labour-license" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/labour-license-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Labour License Registration | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Apply for your labour license confidently with Fortune Multi Services. Fast, legal, and trusted registration services."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/labour-license-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/gov/labour-license" />
+</Helmet>
+
       <br/>
       <br/>
       <header className="mb-8 text-center">

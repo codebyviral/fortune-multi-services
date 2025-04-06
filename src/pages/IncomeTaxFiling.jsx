@@ -1,11 +1,46 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Helmet } from "react-helmet";
 const IncomeTaxFiling = () => {
   const navigate = useNavigate();
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center w-full">
+      
+
+<Helmet>
+  <title>Income Tax Filing Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Fast and accurate Income Tax Filing services in India. File your ITR with expert assistance from Fortune Multi Services today!"
+  />
+  <meta
+    name="keywords"
+    content="Income Tax Filing, ITR Filing, Online Tax Filing India, Tax Consultant, Income Tax Return, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Income Tax Filing Services | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get expert help for your Income Tax Return. Quick, reliable, and compliant filing services by Fortune Multi Services."
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/tax-compliances/services/income-tax-filing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/income-tax-filing-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Income Tax Filing Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="File your income tax return online with our trusted experts. Accurate and on-time services from Fortune Multi Services."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/income-tax-filing-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/tax-compliances/services/income-tax-filing" />
+</Helmet>
+
       <br />
       <br />
       <br />

@@ -1,10 +1,44 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
 import { FileText, Building2, Receipt, Headphones, Rocket, Shield, PieChart, Users } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   return (
     <section id="services" className="py-20 bg-gray-50">
+<Helmet>
+  <title>Our Services | Fortune Multi Services</title>
+  <meta
+    name="description"
+    content="Explore a wide range of professional services offered by Fortune Multi Services including business registration, tax filing, legal compliance, and more."
+  />
+  <meta
+    name="keywords"
+    content="Business Services, Tax Filing, Legal Services, Compliance, Registration, Financial Services, Fortune Multi Services"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Our Services | Fortune Multi Services" />
+  <meta
+    property="og:description"
+    content="Get comprehensive business and financial solutions under one roof. Discover our expert services now!"
+  />
+  <meta property="og:url" content="https://fortunemultiservices.in/services" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fortunemultiservices.in/assets/images/services-banner.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Services | Fortune Multi Services" />
+  <meta
+    name="twitter:description"
+    content="Fortune Multi Services offers top-quality business, legal, and tax-related services tailored to your needs."
+  />
+  <meta name="twitter:image" content="https://fortunemultiservices.in/assets/images/services-banner.jpg" />
+
+  <link rel="canonical" href="https://fortunemultiservices.in/services" />
+</Helmet>
+
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
