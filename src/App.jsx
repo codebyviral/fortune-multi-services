@@ -88,10 +88,10 @@ function App() {
             <Route path="/registrations/company/udyam-registration" element={<UdyamRegistration />} />
             <Route path="/registrations/company/llp-registration" element={<LLPPage />} />
             <Route path="/registrations/company/society-registration" element={<SocietyPage />} />
-            <Route path="/gov/iec-code-registration" element={<IECCodeRegistration />} />
-            <Route path="/gov/pf-registration" element={<PFRegistration />} />
-            <Route path="/gov/municipal-trade-license" element={<MunicipalPage />} />
-            <Route path="/gov/labour-license" element={<LabourLicense />} />
+            <Route path="/registrations/company/iec-code-registration" element={<IECCodeRegistration />} />
+            <Route path="/registrations/company/pf-registration" element={<PFRegistration />} />
+            <Route path="/registrations/company/municipal-trade-license" element={<MunicipalPage />} />
+            <Route path="/registrations/company/labour-license" element={<LabourLicense />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/tax-compliances/services/income-tax-filing" element={<IncomeTaxFiling />}/>
             <Route path="/tax-compliances/services/income-tax-audit" element={<IncomeTaxAudit />}/>
@@ -108,12 +108,12 @@ function App() {
             <Route path="/food-license/fssai/food-central-license" element={<StateFoodLicense />}/>
             <Route path="/food-license/fssai/food-state-license" element={<CentralFoodLicense />}/>
             <Route path="/products/simple-physical-product/" element={<CentralFoodLicense />}/>
-            <Route path="gov/ghmc-trade-license" element={<GHMCRegistration />}/>
-            <Route path="/gov/iso-registration" element={<ISORegistration />}/>
-            <Route path="/gov/esi-registration" element={<ESIRegistration />}/>
+            <Route path="/registrations/company/ghmc-trade-license" element={<GHMCRegistration />}/>
+            <Route path="/registrations/company/iso-registration" element={<ISORegistration />}/>
+            <Route path="/registrations/company/esi-registration" element={<ESIRegistration />}/>
             <Route path="/home" element={<Intro />}/>
             <Route path="/" element={<Intro />}/>
-            {/* <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/> */}
+            <Route path="/WEBORIUM/weborium" element={<WeboriumServices />}/>
             <Route path="/shop/" element={<WeboriumServices />}/>
             <Route path="/services" element={<Services />}/>
             < Route path="*" element={<NotFound />} />
