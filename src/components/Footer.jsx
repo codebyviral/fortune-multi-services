@@ -439,9 +439,9 @@ const Footer = () => {
     >
       {/* Replace this with your logo */}
       <img 
-        src="/images.png" 
+        src="/images.jpg" 
         alt="Company Logo"
-        className="h-18 w-18 object-contain"
+        className="h-16 w-16 object-contain"
       />
     </motion.button>
 
