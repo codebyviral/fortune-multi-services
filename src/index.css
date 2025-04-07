@@ -6,7 +6,7 @@
   --dark-blue: #1e377a;
   --light-gray: #d0e8ff;
   --white: #FFFFFF;
-  --text-gray: #000000;
+  --text-gray: #240b89;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 .page-content {
-  margin-top: 4rem; /* Adjust as needed */
+  margin-top: 2rem; /* Adjust as needed */
 }
 
 /* Header Styles */
@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: var(--white);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .header-contact {
@@ -175,6 +175,11 @@ body {
 
 .nav-chevron.rotate {
   transform: rotate(180deg);
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .dropdown {

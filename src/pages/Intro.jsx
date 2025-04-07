@@ -16,6 +16,7 @@ const Intro = () => {
       <div className="min-h-screen">
 
 <Helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fortune Multi Services | Business, Financial & Digital Solutions</title>
   <meta
     name="description"
@@ -25,7 +26,7 @@ const Intro = () => {
     name="keywords"
     content="Fortune Multi Services, Business Services, Company Registration, GST Filing, Tax Consultancy, Digital Solutions, Startup Services"
   />
-
+  
   {/* Open Graph / Facebook */}
   <meta property="og:title" content="Fortune Multi Services | Business, Financial & Digital Solutions" />
   <meta
