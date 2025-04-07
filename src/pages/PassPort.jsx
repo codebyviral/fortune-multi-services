@@ -115,22 +115,7 @@ const PassPort = () => {
           <li className="mb-2">Police verification may be required depending on your application type.</li>
         </ul>
       </div>
-
-      {/* Official Link Section */}
-      <div>
-        <h5 className="text-lg font-semibold mb-4">Official Portal:</h5>
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="https://passportindia.gov.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Visit Passport Seva Portal
-          </a>
-        </div>
       </div>
-    </div>
   );
 };
 
