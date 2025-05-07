@@ -51,6 +51,8 @@ import TradeMark from "./pages/TradeMark";
 import Socity from "./pages/Socity"
 import { Helmet } from "react-helmet";
 
+import ScamAlert from "./components/ScamAlert";
+
 function App() {
 
   return (
@@ -82,6 +84,7 @@ function App() {
 
 
         <Header />
+        <ScamAlert/>
         <br/>
         <br/>
         {/* Main content area */}
@@ -146,6 +149,8 @@ function App() {
             <Route path="/services" element={<Services />}/>
             < Route path="*" element={<NotFound />} />
             <Route path="/products/simple-digital-product/" element={<Services />}/>
+
+            <Route path="/ScamAlert" element={<ScamAlert/>}/>
           </Routes>
         </main>
       </div>
