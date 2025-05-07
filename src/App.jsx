@@ -84,7 +84,7 @@ function App() {
 
 
         <Header />
-        <ScamAlert/>
+        
         <br/>
         <br/>
         {/* Main content area */}
