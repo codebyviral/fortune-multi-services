@@ -54,83 +54,216 @@ import { Helmet } from "react-helmet";
 
 import ScamAlert from "./components/ScamAlert";
 
-// Popup Ad Component
+// HEAVY DUTY POPUP AD - BOLD & IN YOUR FACE
 const PopupAd = ({ onClose }) => {
   useEffect(() => {
-    // Prevent body scroll when popup is open
     document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
     };
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm">
-      <div className="relative mx-4 w-full max-w-md animate-fade-in-up rounded-2xl bg-white shadow-2xl">
-        {/* Close Button */}
+    <div 
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "rgba(0,0,0,0.95)",
+        zIndex: 99999,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "'Impact', 'Arial Black', sans-serif",
+      }}
+    >
+      {/* MAIN POPUP BOX - HEAVY BORDER, DARK THEME */}
+      <div
+        style={{
+          width: "90%",
+          maxWidth: "550px",
+          backgroundColor: "#0a0a0a",
+          border: "8px solid #ffcc00",
+          borderRadius: "0px",
+          boxShadow: "20px 20px 0px rgba(0,0,0,0.8), inset 0 0 20px rgba(255,204,0,0.3)",
+          position: "relative",
+          animation: "popIn 0.3s cubic-bezier(0.34, 1.2, 0.64, 1)",
+        }}
+      >
+        {/* CLOSE BUTTON - BOLD & CHUNKY */}
         <button
           onClick={onClose}
-          className="absolute -right-3 -top-3 flex h-8 w-8 items-center justify-center rounded-full bg-red-500 text-white transition-all hover:bg-red-600 hover:shadow-lg"
+          style={{
+            position: "absolute",
+            top: "-15px",
+            right: "-15px",
+            width: "45px",
+            height: "45px",
+            backgroundColor: "#ff3300",
+            color: "white",
+            border: "3px solid white",
+            borderRadius: "0px",
+            fontSize: "28px",
+            fontWeight: "bold",
+            cursor: "pointer",
+            zIndex: 10,
+            fontFamily: "monospace",
+            boxShadow: "3px 3px 0px black",
+          }}
         >
           ✕
         </button>
 
-        {/* Ad Content */}
-        <div className="overflow-hidden rounded-2xl">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 text-center">
-            <h3 className="text-xl font-bold text-white">✨ Special Offer ✨</h3>
+        {/* CONTENT AREA */}
+        <div style={{ padding: "30px 25px", textAlign: "center" }}>
+          {/* BADGE */}
+          <div
+            style={{
+              backgroundColor: "#ffcc00",
+              color: "#000",
+              display: "inline-block",
+              padding: "8px 18px",
+              fontWeight: "bold",
+              fontSize: "14px",
+              letterSpacing: "2px",
+              marginBottom: "25px",
+              fontFamily: "monospace",
+            }}
+          >
+            🔥 LIMITED TIME OFFER 🔥
           </div>
 
-          <div className="p-6 text-center">
-            {/* Developer Avatar/Icon */}
-            <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg">
-              <svg
-                className="h-10 w-10 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-            </div>
+          {/* MAIN HEADLINE */}
+          <h1
+            style={{
+              fontSize: "42px",
+              fontWeight: "bold",
+              margin: "10px 0",
+              color: "#ffcc00",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              textShadow: "4px 4px 0px #8b0000",
+              fontFamily: "'Impact', 'Arial Black', sans-serif",
+            }}
+          >
+            WEBSITE<br />DEVELOPMENT
+          </h1>
 
-            <h2 className="mb-2 text-2xl font-bold text-gray-800">
-              Website Development
-            </h2>
+          {/* SUBHEADLINE */}
+          <p
+            style={{
+              fontSize: "20px",
+              color: "#ffffff",
+              marginTop: "15px",
+              fontWeight: "bold",
+              backgroundColor: "#1a1a1a",
+              display: "inline-block",
+              padding: "8px 20px",
+              borderLeft: "5px solid #ffcc00",
+              fontFamily: "'Courier New', monospace",
+            }}
+          >
+            CONTACT THE DEVELOPER
+          </p>
 
-            <p className="mb-4 text-gray-600">
-              Need a professional website for your business?
-            </p>
-
-            <div className="mb-6 rounded-lg bg-gray-100 p-3">
-              <p className="text-sm text-gray-500">Contact Now</p>
-              <a
-                href="tel:8328142226"
-                className="text-2xl font-bold text-blue-600 hover:text-blue-700"
-              >
-                8328142226
-              </a>
-            </div>
-
-            <p className="mb-4 text-sm text-gray-500">
-              ⭐ Present website also developed by him ⭐
-            </p>
-
-            <button
-              onClick={onClose}
-              className="w-full rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 py-3 font-semibold text-white transition-all hover:from-blue-700 hover:to-purple-700"
+          {/* PHONE NUMBER - BIG & BOLD */}
+          <div style={{ margin: "25px 0" }}>
+            <a
+              href="tel:8328142226"
+              style={{
+                fontSize: "52px",
+                fontWeight: "bold",
+                color: "#ffcc00",
+                textDecoration: "none",
+                backgroundColor: "#1f1f1f",
+                padding: "10px 20px",
+                display: "inline-block",
+                border: "2px solid #ffcc00",
+                letterSpacing: "4px",
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+              }}
             >
-              Got it! Close
-            </button>
+              8328142226
+            </a>
           </div>
+
+          {/* DIVIDER */}
+          <div
+            style={{
+              height: "3px",
+              background: "#ffcc00",
+              width: "80px",
+              margin: "20px auto",
+            }}
+          />
+
+          {/* MESSAGE - BOLD TEXT */}
+          <p
+            style={{
+              fontSize: "18px",
+              color: "#dddddd",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+              fontFamily: "'Courier New', monospace",
+              backgroundColor: "#000",
+              padding: "12px",
+              border: "1px solid #333",
+            }}
+          >
+            ⚡ PRESENT WEBSITE ALSO DEVELOPED BY HIM ⚡
+          </p>
+
+          {/* CALL TO ACTION BUTTON */}
+          <button
+            onClick={onClose}
+            style={{
+              backgroundColor: "#ffcc00",
+              color: "#000",
+              border: "none",
+              padding: "14px 30px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              marginTop: "20px",
+              cursor: "pointer",
+              textTransform: "uppercase",
+              fontFamily: "'Impact', sans-serif",
+              letterSpacing: "1px",
+              width: "100%",
+              transition: "all 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = "#ffdd33";
+              e.target.style.transform = "scale(0.98)";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "#ffcc00";
+              e.target.style.transform = "scale(1)";
+            }}
+          >
+            💪 CONTINUE TO WEBSITE 💪
+          </button>
         </div>
       </div>
+
+      {/* KEYFRAMES STYLE */}
+      <style>{`
+        @keyframes popIn {
+          0% {
+            transform: scale(0.7);
+            opacity: 0;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      `}</style>
     </div>
   );
 };
@@ -139,11 +272,10 @@ function App() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    // Show popup after a short delay when website opens
+    // Show popup IMMEDIATELY when website loads - heavy style
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 500);
-
+    }, 300);
     return () => clearTimeout(timer);
   }, []);
 
@@ -153,7 +285,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50" style={{ position: "relative" }}>
         <Helmet>
           <title>
             Fortune Multi Services | Business, Finance & Digital Experts
@@ -372,7 +504,7 @@ function App() {
           </Routes>
         </main>
 
-        {/* Popup Ad */}
+        {/* HEAVY DUTY POPUP */}
         {showPopup && <PopupAd onClose={handleClosePopup} />}
       </div>
 
