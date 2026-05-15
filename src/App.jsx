@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -53,7 +54,103 @@ import { Helmet } from "react-helmet";
 
 import ScamAlert from "./components/ScamAlert";
 
+// Popup Ad Component
+const PopupAd = ({ onClose }) => {
+  useEffect(() => {
+    // Prevent body scroll when popup is open
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm">
+      <div className="relative mx-4 w-full max-w-md animate-fade-in-up rounded-2xl bg-white shadow-2xl">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute -right-3 -top-3 flex h-8 w-8 items-center justify-center rounded-full bg-red-500 text-white transition-all hover:bg-red-600 hover:shadow-lg"
+        >
+          ✕
+        </button>
+
+        {/* Ad Content */}
+        <div className="overflow-hidden rounded-2xl">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 text-center">
+            <h3 className="text-xl font-bold text-white">✨ Special Offer ✨</h3>
+          </div>
+
+          <div className="p-6 text-center">
+            {/* Developer Avatar/Icon */}
+            <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg">
+              <svg
+                className="h-10 w-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            </div>
+
+            <h2 className="mb-2 text-2xl font-bold text-gray-800">
+              Website Development
+            </h2>
+
+            <p className="mb-4 text-gray-600">
+              Need a professional website for your business?
+            </p>
+
+            <div className="mb-6 rounded-lg bg-gray-100 p-3">
+              <p className="text-sm text-gray-500">Contact Now</p>
+              <a
+                href="tel:8328142226"
+                className="text-2xl font-bold text-blue-600 hover:text-blue-700"
+              >
+                8328142226
+              </a>
+            </div>
+
+            <p className="mb-4 text-sm text-gray-500">
+              ⭐ Present website also developed by him ⭐
+            </p>
+
+            <button
+              onClick={onClose}
+              className="w-full rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 py-3 font-semibold text-white transition-all hover:from-blue-700 hover:to-purple-700"
+            >
+              Got it! Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Show popup after a short delay when website opens
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -102,9 +199,9 @@ function App() {
         <Header />
         <br />
         <br />
+        <br />
+        <br />
 
-        <br />
-        <br />
         {/* Main content area */}
         <main className="container mx-auto px-4 py-8">
           <Routes>
@@ -274,8 +371,11 @@ function App() {
             />
           </Routes>
         </main>
+
+        {/* Popup Ad */}
+        {showPopup && <PopupAd onClose={handleClosePopup} />}
       </div>
-      {/* add change */}
+
       <Footer />
     </Router>
   );
